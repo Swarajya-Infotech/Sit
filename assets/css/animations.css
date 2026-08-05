@@ -1,0 +1,60 @@
+/* =========================================================
+ * SITNAM IT SOLUTIONS - Custom Keyframe & Utility Animations
+ * ========================================================= */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.25), 0 0 50px rgba(6, 182, 212, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.45), 0 0 75px rgba(99, 102, 241, 0.35);
+  }
+}
+
+@keyframes floatElement {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+@keyframes blinkCaret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--swarajya-cyan, #06b6d4); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animated-bg-mesh {
+  background: linear-gradient(-45deg, #0f172a, #1e1b4b, #0f2b48, #041d38);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.light-mode .animated-bg-mesh {
+  background: linear-gradient(-45deg, #f8fafc, #eff6ff, #f0fdf4, #e0f2fe);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.floating-anim {
+  animation: floatElement 6s ease-in-out infinite;
+}
+
+.glow-effect {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Typing Caret */
+.typed-cursor {
+  font-weight: 300;
+  color: #06b6d4;
+  animation: blinkCaret 0.8s infinite;
+}
