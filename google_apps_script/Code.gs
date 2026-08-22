@@ -17,7 +17,7 @@ const CONFIG = {
     WEBSITE_LEADS: { 
       name: "Website_Leads", 
       color: "#0F172A", 
-      headers: ["Lead ID", "Date", "Time", "Name", "Company", "Email", "Phone", "WhatsApp", "Country", "State", "City", "Service", "Budget", "Message", "Status", "Assigned To", "Remarks"] 
+      headers: ["Lead ID", "Date", "Time", "Name", "Company", "Email", "Phone", "WhatsApp", "Country", "State", "City", "Service", "Budget", "Preferred Time", "Message", "Status", "Assigned To", "Remarks"] 
     },
     CUSTOMERS: { 
       name: "Customers", 
@@ -402,7 +402,7 @@ function doPost(e) {
       name, data.company || "", email, 
       phone, data.whatsapp || phone, data.country || "India", 
       data.state || "", data.city || "", data.service || "General Inquiry", 
-      data.budget || "Discuss Later", data.message || "", "New", "Unassigned", "Form: " + formType
+      data.budget || "Discuss Later", data.contact_time || "", data.message || "", "New", "Unassigned", "Form: " + formType
     ]);
 
     CacheService.getScriptCache().remove("duplicate_contacts");

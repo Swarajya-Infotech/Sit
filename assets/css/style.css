@@ -72,6 +72,7 @@ body.light-mode .nav-link-swarajya:hover {
   color: var(--primary) !important;
   background: transparent;
 }
+
 [data-theme="light"] .nav-link-swarajya.active,
 body.light-mode .nav-link-swarajya.active {
   color: #FFFFFF !important;
@@ -84,6 +85,7 @@ body.light-mode .btn-swarajya-outline {
   border-color: var(--primary);
   color: var(--primary) !important;
 }
+
 [data-theme="light"] .btn-swarajya-outline:hover,
 body.light-mode .btn-swarajya-outline:hover {
   background: var(--primary);
@@ -91,24 +93,29 @@ body.light-mode .btn-swarajya-outline:hover {
   box-shadow: 0 0 15px var(--accent);
   border-color: var(--primary);
 }
+
 [data-theme="light"] .btn-swarajya-primary,
 body.light-mode .btn-swarajya-primary {
   box-shadow: 0 8px 20px -4px rgba(255, 122, 0, 0.4);
 }
+
 [data-theme="light"] .btn-swarajya-primary:hover,
 body.light-mode .btn-swarajya-primary:hover {
   box-shadow: 0 12px 28px -4px var(--accent);
 }
+
 [data-theme="light"] .gradient-text,
 body.light-mode .gradient-text {
   background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 [data-theme="light"] .icon-box-swarajya,
 body.light-mode .icon-box-swarajya {
   box-shadow: 0 10px 20px -5px rgba(255, 122, 0, 0.4);
 }
+
 [data-theme="light"] .glass-card:hover .icon-box-swarajya,
 body.light-mode .glass-card:hover .icon-box-swarajya {
   box-shadow: 0 15px 30px -5px rgba(255, 194, 71, 0.6);
@@ -125,8 +132,18 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   color: var(--heading) !important;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -144,7 +161,8 @@ p {
   opacity: 1 !important;
 }
 
-.text-cyan {
+.text-cyan,
+.text-info {
   color: var(--secondary) !important;
 }
 
@@ -152,8 +170,17 @@ p {
   color: var(--primary) !important;
 }
 
-.text-white {
+/* Global text overrides to adapt to light/dark themes automatically */
+.text-white,
+.text-light {
   color: var(--heading) !important;
+}
+
+/* Override opacity on backgrounds so they adapt cleanly */
+.bg-opacity-50,
+.bg-opacity-25 {
+  opacity: 1 !important;
+  --bs-bg-opacity: 1 !important;
 }
 
 a {
@@ -164,6 +191,16 @@ a {
 /* Background Utility Overrides */
 .bg-dark {
   background-color: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+.bg-secondary {
+  background-color: var(--chip-bg) !important;
+  color: var(--chip-text) !important;
+}
+
+.border-secondary {
+  border-color: var(--border) !important;
 }
 
 .bg-body {
@@ -367,7 +404,8 @@ a {
   transition: var(--transition);
 }
 
-.tech-tab-btn.active, .tech-tab-btn:hover {
+.tech-tab-btn.active,
+.tech-tab-btn:hover {
   background: var(--primary);
   border-color: var(--primary);
   color: #FFFFFF !important;
@@ -426,13 +464,24 @@ a {
 }
 
 /* Forms & Inputs */
-.form-control, .form-select {
+.form-control,
+.form-select,
+textarea {
   background-color: var(--card) !important;
   color: var(--heading) !important;
   border: 1px solid var(--border) !important;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control::placeholder,
+.form-select::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 1 !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
   border-color: var(--secondary) !important;
   box-shadow: 0 0 0 0.25rem rgba(6, 182, 212, 0.2) !important;
 }
@@ -442,7 +491,56 @@ a {
   font-weight: 600;
 }
 
+/* Accordion Fixes for Light/Dark Mode */
+.accordion-button {
+  color: var(--heading) !important;
+  background-color: transparent !important;
+}
+
+.accordion-body {
+  color: var(--text) !important;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button.collapsed::after {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="light"] .accordion-button:not(.collapsed)::after,
+body.light-mode .accordion-button:not(.collapsed)::after,
+[data-theme="light"] .accordion-button.collapsed::after,
+body.light-mode .accordion-button.collapsed::after {
+  filter: none;
+}
+
+.accordion-item {
+  background-color: var(--card) !important;
+  border-color: var(--border) !important;
+}
+
+/* Typography & Layout Fixes */
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+.word-break-all {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.word-break-word {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 /* Footer */
+.footer-swarajya p,
+.footer-swarajya span,
+.footer-swarajya .text-muted,
+.footer-swarajya .text-white {
+  color: var(--footer-text) !important;
+}
+
 .footer-swarajya {
   background: var(--footer-bg);
   border-top: 1px solid var(--border);
@@ -507,17 +605,6 @@ a {
   display: flex;
   align-items: center;
 }
-.header-actions-wrapper {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-@media (max-width: 991px) {
-  .header-brand-wrapper, .header-actions-wrapper {
-    flex: none;
-  }
-}
 
 .navbar-brand-swarajya {
   padding-left: 0.5rem;
@@ -526,23 +613,49 @@ a {
   display: flex;
   align-items: center;
 }
+
 .brand-logo {
   height: auto;
-  max-height: 56px;
+  max-height: 110px;
   width: auto;
   object-fit: contain;
+  filter: drop-shadow(0 0 15px var(--primary));
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.brand-logo:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 25px var(--primary));
+}
+
+.header-actions-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+
+  .header-brand-wrapper,
+  .header-actions-wrapper {
+    flex: none;
+  }
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .brand-title {
-  font-size: 32px;
+  font-size: 26px;
   letter-spacing: 0.5px;
   font-weight: 700;
-  color: #FFFFFF !important;
+  color: var(--heading) !important;
 }
+
 .brand-tagline {
   font-size: 15px;
   font-weight: 500;
@@ -554,6 +667,7 @@ a {
   .brand-title {
     font-size: 22px;
   }
+
   .brand-tagline {
     font-size: 14px;
   }
@@ -563,9 +677,11 @@ a {
   .brand-logo {
     max-height: 48px;
   }
+
   .brand-title {
     font-size: 18px;
   }
+
   .brand-tagline {
     font-size: 13px;
   }
@@ -573,17 +689,26 @@ a {
 
 .footer-brand-logo {
   height: auto;
-  max-height: 50px;
+  max-height: 110px;
   width: auto;
   object-fit: contain;
   margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 15px var(--primary));
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.footer-brand-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 25px var(--primary));
+}
+
 .footer-brand-title {
   font-size: 26px;
   letter-spacing: 0.5px;
   font-weight: 700;
   color: #FFFFFF !important;
 }
+
 .footer-brand-tagline {
   font-size: 14px;
   font-weight: 500;
@@ -591,4 +716,52 @@ a {
   white-space: normal;
   line-height: 1.4;
   margin-top: 4px;
+}
+
+/* =========================================
+   CUSTOM CURSOR EFFECTS (LOW LOAD)
+   ========================================= */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-outline {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--primary);
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.cursor-glow {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, rgba(0,0,0,0) 60%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+[data-theme="light"] .cursor-glow, body.light-mode .cursor-glow {
+  background: radial-gradient(circle, rgba(255, 122, 0, 0.04) 0%, rgba(0,0,0,0) 60%);
 }

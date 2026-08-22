@@ -7,7 +7,7 @@
  */
 
 // Deployed Google Apps Script Web App URL (Replace with your deployed Web App URL)
-const GOOGLE_SCRIPT_WEB_APP_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx8-SG9cvQmGxZyzrjAoyqTqJ40bRwQZTtWz7ZagTxfPOVGh67dfVq92zttaaUG0SHf/exec";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -107,9 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const payload = {
-      name: data.name || data.fullName || "",
+      name: data.name || data.fullName || data.applicant_name || "",
       company: data.company || data.companyName || "",
-      email: data.email || "",
+      email: data.email || data.applicant_email || "",
       phone: data.phone || data.phoneNumber || "",
       whatsapp: data.whatsapp || data.whatsappNumber || data.phone || "",
       country: data.country || "India",
@@ -117,7 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
       city: data.city || "",
       service: data.service || data.serviceRequired || data.product || "General Inquiry",
       budget: data.budget || "Discuss Later",
-      message: data.message || "",
+      contact_time: data.preferredContactTime || "",
+      message: data.message || data.summary || "",
+      formType: data.formType || data.form_type || data.pageName || data._subject || "Contact Form",
+      profile_url: data.profile_url || "",
       website_hp: data.website_hp || "",
       origin: window.location.href
     };
@@ -128,14 +131,22 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    if (!payload.name || payload.name.length < 2) {
-      alert("Please enter a valid Full Name.");
-      return;
-    }
-
-    if (!payload.phone || payload.phone.length < 7) {
-      alert("Please enter a valid Phone Number.");
-      return;
+    var formTypeStr = (payload.formType || "").toLowerCase();
+    
+    if (formTypeStr === "newsletter") {
+      if (!payload.email || payload.email.length < 5) {
+        alert("Please enter a valid Email.");
+        return;
+      }
+    } else {
+      if (!payload.name || payload.name.length < 2) {
+        alert("Please enter a valid Full Name.");
+        return;
+      }
+      if (!payload.phone || payload.phone.length < 7) {
+        alert("Please enter a valid Phone Number.");
+        return;
+      }
     }
 
     // 2. Set UI Loading State
@@ -215,17 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  if (contactForm) contactForm.addEventListener('submit', (e) => submitLeadToGoogleSheets(contactForm, e));
-  if (mainContactForm) mainContactForm.addEventListener('submit', (e) => submitLeadToGoogleSheets(mainContactForm, e));
-
-  // Newsletter Form
-  const newsletterForm = document.querySelector('#newsletterForm');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you for subscribing to Swarajya Infotech technology insights!');
-      newsletterForm.reset();
-    });
-  }
+  const allForms = document.querySelectorAll('form');
+  allForms.forEach(f => {
+    f.addEventListener('submit', (e) => submitLeadToGoogleSheets(f, e));
+  });
 
 });
