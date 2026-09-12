@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SITNAM IT SOLUTIONS - Main Layout & Component Handler
  */
 
@@ -72,11 +72,15 @@
         layoutMode: 'fitRows'
       });
 
-      const filtersElem = document.querySelectorAll('.portfolio-filters li');
+      const filtersElem = document.querySelectorAll('.portfolio-filters li, .portfolio-filters button');
       filtersElem.forEach(filterLi => {
         filterLi.addEventListener('click', function() {
-          document.querySelector('.portfolio-filters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
+          const activeEl = document.querySelector('.portfolio-filters .filter-active, .portfolio-filters .active');
+          if (activeEl) {
+            activeEl.classList.remove('filter-active', 'active');
+          }
+          this.classList.add('active'); // Keep .active for bootstrap styling
+          this.classList.add('filter-active'); // Keep .filter-active for legacy CSS compatibility
           const filterValue = this.getAttribute('data-filter');
           iso.arrange({ filter: filterValue });
         });
