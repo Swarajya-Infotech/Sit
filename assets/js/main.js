@@ -25,8 +25,8 @@
     }
   }
 
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('load', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('load', handleScroll, { passive: true });
 
   // Back to Top Trigger
   const backToTopBtn = document.querySelector('#backToTop');
@@ -89,7 +89,7 @@
   });
 
 
-  // Custom Cursor Animation (Low Load)
+  // Custom Cursor Animation (High Performance Hardware Accelerated)
   if (window.matchMedia("(pointer: fine)").matches) {
     const cursorDot = document.createElement('div');
     cursorDot.classList.add('cursor-dot');
@@ -106,61 +106,50 @@
     let mouseY = window.innerHeight / 2;
     let outlineX = mouseX;
     let outlineY = mouseY;
+    let isMoving = false;
 
     window.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      
-      // Fast update for dot
-      cursorDot.style.left = mouseX + 'px';
-      cursorDot.style.top = mouseY + 'px';
-    });
+      cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+      if (!isMoving) {
+        isMoving = true;
+        requestAnimationFrame(animateCursor);
+      }
+    }, { passive: true });
 
-    // Smooth update for outline & glow via requestAnimationFrame
     function animateCursor() {
-      // Easing factor (lower is smoother/slower)
-      outlineX += (mouseX - outlineX) * 0.15;
-      outlineY += (mouseY - outlineY) * 0.15;
+      outlineX += (mouseX - outlineX) * 0.18;
+      outlineY += (mouseY - outlineY) * 0.18;
 
-      cursorOutline.style.left = outlineX + 'px';
-      cursorOutline.style.top = outlineY + 'px';
-      
-      cursorGlow.style.left = outlineX + 'px';
-      cursorGlow.style.top = outlineY + 'px';
+      cursorOutline.style.transform = `translate3d(${outlineX}px, ${outlineY}px, 0) translate(-50%, -50%)`;
+      cursorGlow.style.transform = `translate3d(${outlineX}px, ${outlineY}px, 0) translate(-50%, -50%)`;
 
-      requestAnimationFrame(animateCursor);
+      if (Math.abs(mouseX - outlineX) > 0.1 || Math.abs(mouseY - outlineY) > 0.1) {
+        requestAnimationFrame(animateCursor);
+      } else {
+        isMoving = false;
+      }
     }
-    animateCursor();
 
-    // Hover effect for links and buttons
-    const setupHoverEffects = () => {
-      const hoverElements = document.querySelectorAll('a, button, .glass-card, input, select, textarea');
-      hoverElements.forEach(el => {
-        // Prevent adding multiple listeners
-        if (el.dataset.cursorAttached) return;
-        el.dataset.cursorAttached = 'true';
-        
-        el.addEventListener('mouseenter', () => {
-          cursorOutline.style.width = '50px';
-          cursorOutline.style.height = '50px';
-          cursorOutline.style.backgroundColor = 'rgba(128, 128, 128, 0.1)';
-        });
-        el.addEventListener('mouseleave', () => {
-          cursorOutline.style.width = '32px';
-          cursorOutline.style.height = '32px';
-          cursorOutline.style.backgroundColor = 'transparent';
-        });
-      });
-    };
-    
-    // Initial setup
-    setupHoverEffects();
-    
-    // Setup again if DOM changes (e.g. dynamic elements)
-    const observer = new MutationObserver(() => {
-        setupHoverEffects();
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
+    // Delegated Hover detection to eliminate hundreds of listeners and MutationObserver thrashing
+    document.addEventListener('mouseover', (e) => {
+      const interactive = e.target.closest('a, button, .glass-card, input, select, textarea, .nav-link-swarajya');
+      if (interactive) {
+        cursorOutline.style.width = '48px';
+        cursorOutline.style.height = '48px';
+        cursorOutline.style.backgroundColor = 'rgba(128, 128, 128, 0.1)';
+      }
+    }, { passive: true });
+
+    document.addEventListener('mouseout', (e) => {
+      const interactive = e.target.closest('a, button, .glass-card, input, select, textarea, .nav-link-swarajya');
+      if (interactive) {
+        cursorOutline.style.width = '32px';
+        cursorOutline.style.height = '32px';
+        cursorOutline.style.backgroundColor = 'transparent';
+      }
+    }, { passive: true });
   }
 })();
 

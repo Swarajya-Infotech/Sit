@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# AI Search Crawlers (ChatGPT Search & AI Discoverability)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://swarajyainfotech.in/sitemap.xml
+

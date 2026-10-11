@@ -37,6 +37,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://swarajyainfotech.in/blog.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://swarajyainfotech.in/website-development-cost-pune.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://swarajyainfotech.in/author-prasad-nimbalkar.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://swarajyainfotech.in/contact.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
