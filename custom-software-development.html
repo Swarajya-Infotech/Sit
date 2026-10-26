@@ -200,56 +200,110 @@
 
   <main id="main-content">
     
-    <!-- Hero Header -->
-    <section class="py-5 animated-bg-mesh border-bottom border-secondary border-opacity-25 text-center">
-      <div class="container py-4">
-        <!-- Breadcrumbs -->
-        <nav aria-label="breadcrumb" class="mb-3 d-inline-block">
-          <ol class="breadcrumb breadcrumb-swarajya mb-0">
-            <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
-            <li class="breadcrumb-item"><a href="./services.html">Services</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Custom Software Development</li>
-          </ol>
-        </nav>
-        
-        <div class="d-flex justify-content-center mb-2">
-          <span class="badge-swarajya text-cyan text-uppercase"><i class="bi bi-code-slash me-1"></i> Flagship Engineering Service</span>
-        </div>
-        <h1 class="display-5 fw-bold mb-3">Custom Software Development Services in Pune</h1>
-        <p class="text-muted max-w-750 mx-auto mb-4 fs-6">
-          Break free from rigid, per-user monthly SaaS fees. We engineer bespoke web applications, enterprise ERPs, and automation platforms tailored around your exact operations with 100% source code ownership.
-        </p>
-        
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <button type="button" class="btn btn-swarajya-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#demoModal">
-            <i class="bi bi-calendar-check-fill me-1"></i> Request Technical Consultation
-          </button>
-          <a href="./custom-software-development-services.html" class="btn btn-outline-info px-4 py-2">
-            <i class="bi bi-journal-text me-1"></i> Read In-Depth 2026 Pricing Guide &rarr;
-          </a>
+    <!-- Hero Section (Two-Column Layout matching Website UI) -->
+    <section class="hero-section animated-bg-mesh overflow-hidden py-5 border-bottom border-secondary border-opacity-25">
+      <div class="container py-3">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-aos="fade-right">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb" class="mb-3 d-inline-block">
+              <ol class="breadcrumb breadcrumb-swarajya mb-0">
+                <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="./services.html">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Custom Software</li>
+              </ol>
+            </nav>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge-swarajya text-cyan text-uppercase"><i class="bi bi-code-slash me-1"></i> Flagship Engineering Service</span>
+            </div>
+            <h1 class="hero-title display-5 fw-bold mb-3">Custom Software Development Services in Pune</h1>
+            <p class="hero-lead text-muted mb-4">
+              Break free from rigid off-the-shelf software and recurring per-user SaaS license fees. We engineer bespoke enterprise software, web applications, and automation systems tailored around your exact operations with 100% full source code ownership.
+            </p>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <button type="button" class="btn btn-swarajya-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
+                <i class="bi bi-calendar-check-fill me-1"></i> Book Discovery Demo
+              </button>
+              <a href="tel:+919404190417" class="btn btn-swarajya-outline">
+                <i class="bi bi-telephone-fill me-1"></i> Call Engineer (+91 9404190417)
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="glass-card p-4 position-relative floating-anim glow-effect">
+              <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-box-swarajya mb-0"><i class="bi bi-shield-check"></i></div>
+                  <div>
+                    <h2 class="h5 m-0 text-white">Swarajya IP Guarantee</h2>
+                    <small class="text-muted">100% Code Ownership &bull; Zero SaaS Taxes</small>
+                  </div>
+                </div>
+                <span class="badge-chip border border-success px-3 py-1 rounded-pill text-success"><i class="bi bi-check-circle-fill me-1"></i> Verified</span>
+              </div>
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Source Code Handover</small>
+                    <span class="fs-4 fw-bold text-cyan">100%</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Monthly License Fee</small>
+                    <span class="fs-4 fw-bold text-cyan">₹0</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">System Availability</small>
+                    <span class="fs-4 fw-bold text-cyan">99.99%</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Local Pune Support</small>
+                    <span class="fs-4 fw-bold text-cyan">24/7 SLA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 text-muted fs-7 d-flex justify-content-between">
+                <span><i class="bi bi-check-circle-fill text-info me-1"></i> Git Repository Transfer</span>
+                <span><i class="bi bi-check-circle-fill text-info me-1"></i> Dedicated Solutions Architect</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Trust Stats Bar -->
+    <!-- Key Statistics Bar -->
     <section class="py-4 border-bottom border-secondary border-opacity-25 bg-dark">
       <div class="container">
         <div class="row g-3 text-center">
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-info mb-0">100%</div>
-            <div class="fs-8 text-muted">Source Code Ownership (Git Handover)</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Source Code Ownership</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-success mb-0">₹0</div>
-            <div class="fs-8 text-muted">Recurring Monthly Per-Seat Licenses</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">₹0</div>
+              <div class="stat-label">Recurring SaaS Fees</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-cyan mb-0">Pune Office</div>
-            <div class="fs-8 text-muted">Direct Local Engineering Support</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">Pune Hub</div>
+              <div class="stat-label">Local On-Site Support</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-white mb-0">7-14 Mo</div>
-            <div class="fs-8 text-muted">Average Full ROI Payback Period</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">7-14 Mo</div>
+              <div class="stat-label">Full ROI Payback</div>
+            </div>
           </div>
         </div>
       </div>
@@ -266,62 +320,74 @@
 
         <div class="row g-4">
           <!-- 1. Enterprise Web Applications -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-window-sidebar"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Custom Web Applications & Portals</h3>
-              <p class="fs-7 text-muted mb-3">Cloud web applications accessible from any phone, tablet, or desktop. Built for client onboarding, contractor time-tracking, dealer ordering, and quotation generators.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-window-sidebar"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Custom Web Applications & Portals</h3>
+                <p class="fs-7 text-muted mb-3">Cloud web applications accessible from any phone, tablet, or desktop. Built for client onboarding, contractor time-tracking, dealer ordering, and quotation generators.</p>
+              </div>
               <a href="./web-application-development.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Web Application Services &rarr;</a>
             </div>
           </div>
 
           <!-- 2. Industrial Manufacturing ERP -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-gear-wide-connected"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Industrial ERP & Production Routing</h3>
-              <p class="fs-7 text-muted mb-3">Engineered for engineering workshops, CNC machining units, and fabrication plants in Bhosari and Chakan. Track job cards, heat numbers, and machine uptime.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Industrial ERP & Production Routing</h3>
+                <p class="fs-7 text-muted mb-3">Engineered for engineering workshops, CNC machining units, and fabrication plants in Bhosari and Chakan. Track job cards, heat numbers, and machine uptime.</p>
+              </div>
               <a href="./erp-crm-solutions.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore ERP & CRM Solutions &rarr;</a>
             </div>
           </div>
 
           <!-- 3. Smart Warehouse & Inventory -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-qr-code-scan"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Warehouse & Inventory Software</h3>
-              <p class="fs-7 text-muted mb-3">Eliminate missing stock and phantom inventory. Generate dynamic QR codes on thermal printers, scan items at dispatch using standard Android phones, and auto-sync with Tally.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-qr-code-scan"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Warehouse & Inventory Software</h3>
+                <p class="fs-7 text-muted mb-3">Eliminate missing stock and phantom inventory. Generate dynamic QR codes on thermal printers, scan items at dispatch using standard Android phones, and auto-sync with Tally.</p>
+              </div>
               <a href="./billing-inventory-software.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Billing & Inventory Software &rarr;</a>
             </div>
           </div>
 
           <!-- 4. Native & Cross-Platform Mobile Apps -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-phone-fill"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Mobile App Development</h3>
-              <p class="fs-7 text-muted mb-3">Rugged Android tools for field technicians, barcode scanner guns, and sleek iOS/Android customer apps featuring offline-first local SQLite caching.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-phone-fill"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Mobile App Development</h3>
+                <p class="fs-7 text-muted mb-3">Rugged Android tools for field technicians, barcode scanner guns, and sleek iOS/Android customer apps featuring offline-first local SQLite caching.</p>
+              </div>
               <a href="./mobile-app-development.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Mobile App Services &rarr;</a>
             </div>
           </div>
 
           <!-- 5. Business Process Automation -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-robot"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Automation & API Integration</h3>
-              <p class="fs-7 text-muted mb-3">Bridge your software silos. We connect WhatsApp Business API dispatch bots, Razorpay payment webhooks, Avery weighbridge sensors, and government GST portals.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-robot"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Automation & API Integration</h3>
+                <p class="fs-7 text-muted mb-3">Bridge your software silos. We connect WhatsApp Business API dispatch bots, Razorpay payment webhooks, Avery weighbridge sensors, and government GST portals.</p>
+              </div>
               <a href="./automation-integration.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Automation & Integration &rarr;</a>
             </div>
           </div>
 
           <!-- 6. Legacy Modernization & Cloud Migration -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <div class="glass-card p-4 h-100">
-              <div class="icon-box-swarajya mb-3"><i class="bi bi-cloud-check-fill"></i></div>
-              <h3 class="h5 fw-bold text-white mb-2">Legacy Modernization & Cloud</h3>
-              <p class="fs-7 text-muted mb-3">Upgrade obsolete desktop FoxPro/Visual Basic databases to secure, containerized web architectures hosted on AWS, DigitalOcean, or private on-premise servers.</p>
-              <span class="fs-8 text-muted">Zero Data Loss Guarantee</span>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-cloud-check-fill"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Legacy Modernization & Cloud</h3>
+                <p class="fs-7 text-muted mb-3">Upgrade obsolete desktop FoxPro/Visual Basic databases to secure, containerized web architectures hosted on AWS, DigitalOcean, or private on-premise servers.</p>
+              </div>
+              <span class="fs-8 text-cyan"><i class="bi bi-shield-check me-1"></i> Zero Data Loss Guarantee</span>
             </div>
           </div>
         </div>
@@ -339,7 +405,7 @@
 
         <div class="row g-4 justify-content-center">
           <!-- Tier 1 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 position-relative d-flex flex-column justify-content-between">
               <div>
                 <span class="badge bg-secondary text-info mb-2">Tier 1 &bull; MVP</span>
@@ -359,7 +425,7 @@
           </div>
 
           <!-- Tier 2 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 border-info position-relative d-flex flex-column justify-content-between">
               <span class="badge bg-info text-dark position-absolute top-0 end-0 m-3">Most Popular</span>
               <div>
@@ -380,7 +446,7 @@
           </div>
 
           <!-- Tier 3 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 position-relative d-flex flex-column justify-content-between">
               <div>
                 <span class="badge bg-secondary text-info mb-2">Tier 3 &bull; Industrial ERP</span>
@@ -404,6 +470,87 @@
           <i class="bi bi-book-half text-info me-2"></i>
           Read our comprehensive, human-written technical analysis comparing custom software vs commercial SaaS:
           <a href="./custom-software-development-services.html" class="text-info fw-bold">Custom Software Development Services: The No-Fluff Engineering & Pricing Guide (2026) &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our 4-Step Engineering Lifecycle -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge-swarajya text-cyan">Agile Delivery</span>
+          <h2 class="display-6 fw-bold mt-2">How We Deliver Your Custom Software</h2>
+          <p class="text-muted max-w-700 mx-auto">A transparent, sprint-based engineering lifecycle that guarantees code quality, on-time delivery, and seamless deployment.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card p-3 h-100 text-center">
+              <span class="badge bg-primary rounded-pill mb-3 px-3 py-1 fw-bold fs-7">01</span>
+              <div class="fs-2 text-cyan mb-2"><i class="bi bi-search"></i></div>
+              <h4 class="h6 fw-bold text-white mb-2">Scope Blueprint</h4>
+              <p class="fs-8 text-muted mb-0">We document workflows, database entities, roles, and edge cases into an unambiguous Scope of Work (SOW).</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card p-3 h-100 text-center">
+              <span class="badge bg-primary rounded-pill mb-3 px-3 py-1 fw-bold fs-7">02</span>
+              <div class="fs-2 text-cyan mb-2"><i class="bi bi-palette-fill"></i></div>
+              <h4 class="h6 fw-bold text-white mb-2">UI/UX Prototype</h4>
+              <p class="fs-8 text-muted mb-0">Interactive Figma wireframes tested with your actual end-users before a single line of backend code is written.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card p-3 h-100 text-center border-info">
+              <span class="badge bg-primary rounded-pill mb-3 px-3 py-1 fw-bold fs-7">03</span>
+              <div class="fs-2 text-cyan mb-2"><i class="bi bi-code-square"></i></div>
+              <h4 class="h6 fw-bold text-white mb-2">Agile Sprints</h4>
+              <p class="fs-8 text-muted mb-0">Two-week modular sprints with live staging demo checkpoints so you see real working software every fortnight.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="glass-card p-3 h-100 text-center">
+              <span class="badge bg-primary rounded-pill mb-3 px-3 py-1 fw-bold fs-7">04</span>
+              <div class="fs-2 text-cyan mb-2"><i class="bi bi-rocket-takeoff-fill"></i></div>
+              <h4 class="h6 fw-bold text-white mb-2">Launch & Git Handover</h4>
+              <p class="fs-8 text-muted mb-0">Production deployment on your servers, comprehensive staff onboarding, and 100% full Git repository handover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Consultation CTA Banner -->
+    <section class="py-5 bg-dark border-top border-bottom border-secondary border-opacity-25">
+      <div class="container">
+        <div class="glass-card p-4 p-md-5 border-info position-relative overflow-hidden glow-effect text-center text-md-start">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="badge-chip border border-info px-3 py-1 rounded-pill mb-3 d-inline-block text-cyan">
+                <i class="bi bi-lightning-charge-fill me-1"></i> Tailored Proposal
+              </span>
+              <h2 class="display-6 fw-bold text-white mb-3">Ready to Build Your Custom Software Solution?</h2>
+              <p class="text-muted fs-6 mb-0">Schedule a 30-minute technical discovery session with our senior solutions architect in Pune. We will analyze your operational bottlenecks, design a tailored architecture, and provide a transparent fixed-price estimate.</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+              <div class="d-flex flex-column gap-2 justify-content-center align-items-lg-end">
+                <button type="button" class="btn btn-swarajya-primary w-100 py-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+                  <i class="bi bi-calendar-check-fill me-2"></i> Book Discovery Session
+                </button>
+                <div class="d-flex gap-2 w-100">
+                  <a href="https://wa.me/919404190417" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success flex-grow-1 text-white py-2">
+                    <i class="bi bi-whatsapp text-success me-1"></i> WhatsApp
+                  </a>
+                  <a href="tel:+919404190417" class="btn btn-swarajya-outline flex-grow-1 text-white py-2">
+                    <i class="bi bi-telephone-fill me-1"></i> Call Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -558,6 +705,16 @@
     </div>
   </footer>
 
+  <!-- Floating Action Buttons -->
+  <div class="floating-controls">
+    <button type="button" class="float-btn" id="themeToggleBtn" aria-label="Toggle Light or Dark Theme">
+      <i class="bi bi-sun-fill" id="themeIcon"></i>
+    </button>
+    <button type="button" class="float-btn" id="backToTop" aria-label="Scroll Back to Top" style="display: none;">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+  </div>
+
   <!-- Demo Booking Modal -->
   <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -611,6 +768,7 @@
   <!-- Scripts -->
   <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
   <script defer src="./assets/js/aos.js"></script>
+  <script defer src="./assets/js/vendor.js"></script>
   <script defer src="./assets/js/main.js"></script>
   <script defer src="./assets/js/custom.js"></script>
 

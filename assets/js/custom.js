@@ -11,6 +11,16 @@ const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx8-S
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Safety fallback: Ensure AOS initializes across all pages
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
+
   /* -------------------------------------------------------------
    * 1. Dual-Selector Light / Dark Theme Switcher with localStorage
    * ------------------------------------------------------------- */

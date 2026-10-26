@@ -200,56 +200,110 @@
 
   <main id="main-content">
     
-    <!-- Hero Header -->
-    <section class="py-5 animated-bg-mesh border-bottom border-secondary border-opacity-25 text-center">
-      <div class="container py-4">
-        <!-- Breadcrumbs -->
-        <nav aria-label="breadcrumb" class="mb-3 d-inline-block">
-          <ol class="breadcrumb breadcrumb-swarajya mb-0">
-            <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
-            <li class="breadcrumb-item"><a href="./services.html">Services</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Web Application Development</li>
-          </ol>
-        </nav>
-        
-        <div class="d-flex justify-content-center mb-2">
-          <span class="badge-swarajya text-cyan text-uppercase"><i class="bi bi-globe2 me-1"></i> Flagship Web Engineering</span>
-        </div>
-        <h1 class="display-5 fw-bold mb-3">Web Application Development Services in Pune</h1>
-        <p class="text-muted max-w-750 mx-auto mb-4 fs-6">
-          Transform complex business operations into lightning-fast, secure cloud web applications. From custom SaaS platforms and B2B vendor portals to interactive operational dashboards — built with 100% source code ownership and zero monthly license taxes.
-        </p>
-        
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <button type="button" class="btn btn-swarajya-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#demoModal">
-            <i class="bi bi-calendar-check-fill me-1"></i> Schedule Technical Consultation
-          </button>
-          <a href="https://wa.me/919404190417?text=Hello%20Swarajya%20Infotech%2C%20I%20want%20to%20discuss%20a%20Web%20Application%20Development%20project." target="_blank" rel="noopener noreferrer" class="btn btn-outline-success px-4 py-2">
-            <i class="bi bi-whatsapp me-1"></i> Chat with Lead Engineer
-          </a>
+    <!-- Hero Section (Two-Column Layout matching Website UI) -->
+    <section class="hero-section animated-bg-mesh overflow-hidden py-5 border-bottom border-secondary border-opacity-25">
+      <div class="container py-3">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7" data-aos="fade-right">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb" class="mb-3 d-inline-block">
+              <ol class="breadcrumb breadcrumb-swarajya mb-0">
+                <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="./services.html">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Web Applications</li>
+              </ol>
+            </nav>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge-swarajya text-cyan text-uppercase"><i class="bi bi-globe2 me-1"></i> Cloud Web Engineering</span>
+            </div>
+            <h1 class="hero-title display-5 fw-bold mb-3">Web Application Development Services in Pune</h1>
+            <p class="hero-lead text-muted mb-4">
+              Transform complex business operations into lightning-fast, secure cloud web applications. From custom SaaS platforms and B2B vendor portals to interactive operational dashboards — built with 100% source code ownership and zero monthly license taxes.
+            </p>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <button type="button" class="btn btn-swarajya-primary" data-bs-toggle="modal" data-bs-target="#demoModal">
+                <i class="bi bi-calendar-check-fill me-1"></i> Schedule Consultation
+              </button>
+              <a href="tel:+919404190417" class="btn btn-swarajya-outline">
+                <i class="bi bi-telephone-fill me-1"></i> Call Lead Engineer (+91 9404190417)
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <div class="glass-card p-4 position-relative floating-anim glow-effect">
+              <div class="d-flex align-items-center justify-content-between mb-4 border-bottom border-secondary pb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-box-swarajya mb-0"><i class="bi bi-cloud-check-fill"></i></div>
+                  <div>
+                    <h2 class="h5 m-0 text-white">High-Speed Cloud SLA</h2>
+                    <small class="text-muted">Sub-Second Load Time &bull; Lighthouse &gt; 95</small>
+                  </div>
+                </div>
+                <span class="badge-chip border border-success px-3 py-1 rounded-pill text-success"><i class="bi bi-check-circle-fill me-1"></i> Active</span>
+              </div>
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Average Load Time</small>
+                    <span class="fs-4 fw-bold text-cyan">&lt; 1.2s</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Source Code Handover</small>
+                    <span class="fs-4 fw-bold text-cyan">100%</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Cloud Availability</small>
+                    <span class="fs-4 fw-bold text-cyan">99.95%</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded-3 bg-dark bg-opacity-50 border border-secondary border-opacity-25">
+                    <small class="text-muted d-block">Monthly SaaS Fees</small>
+                    <span class="fs-4 fw-bold text-cyan">₹0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 text-muted fs-7 d-flex justify-content-between">
+                <span><i class="bi bi-check-circle-fill text-info me-1"></i> Full Git Transfer</span>
+                <span><i class="bi bi-check-circle-fill text-info me-1"></i> ISO Aligned Architecture</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Trust Stats Bar -->
+    <!-- Key Statistics Bar -->
     <section class="py-4 border-bottom border-secondary border-opacity-25 bg-dark">
       <div class="container">
         <div class="row g-3 text-center">
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-info mb-0">&lt; 1.2s</div>
-            <div class="fs-8 text-muted">Average Web App Load Time</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">&lt; 1.2s</div>
+              <div class="stat-label">Average Load Speed</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-success mb-0">100%</div>
-            <div class="fs-8 text-muted">Client Source Code Ownership</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Source Code Ownership</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-cyan mb-0">99.95%</div>
-            <div class="fs-8 text-muted">Cloud High-Availability SLA</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">99.95%</div>
+              <div class="stat-label">Cloud Uptime SLA</div>
+            </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="h3 fw-bold text-white mb-0">₹0</div>
-            <div class="fs-8 text-muted">Recurring User License Fees</div>
+            <div class="stat-box py-2">
+              <div class="stat-number">₹0</div>
+              <div class="stat-label">Per-User License Tax</div>
+            </div>
           </div>
         </div>
       </div>
@@ -266,7 +320,7 @@
 
         <div class="row g-4">
           <!-- 1. SaaS & Multi-Tenant Platforms -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-cloud-arrow-up-fill"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">Custom SaaS Platforms</h3>
@@ -280,7 +334,7 @@
           </div>
 
           <!-- 2. B2B Customer & Vendor Portals -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-person-badge-fill"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">Customer & Vendor Portals</h3>
@@ -294,7 +348,7 @@
           </div>
 
           <!-- 3. Operational Dashboards & BI -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-bar-chart-line-fill"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">Real-Time BI Dashboards</h3>
@@ -308,7 +362,7 @@
           </div>
 
           <!-- 4. Progressive Web Apps (PWAs) -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-phone"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">Progressive Web Apps (PWAs)</h3>
@@ -322,7 +376,7 @@
           </div>
 
           <!-- 5. B2B eCommerce & Wholesale Catalogs -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-cart-check-fill"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">B2B Wholesale Ordering Systems</h3>
@@ -336,7 +390,7 @@
           </div>
 
           <!-- 6. Secure REST & GraphQL APIs -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100">
               <div class="icon-box-swarajya mb-3"><i class="bi bi-bezier2"></i></div>
               <h3 class="h5 fw-bold text-white mb-2">High-Throughput API Services</h3>
@@ -405,7 +459,7 @@
 
         <div class="row g-4 justify-content-center">
           <!-- Tier 1 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 position-relative d-flex flex-column justify-content-between">
               <div>
                 <span class="badge bg-secondary text-info mb-2">Starter Portal</span>
@@ -425,7 +479,7 @@
           </div>
 
           <!-- Tier 2 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 border-info position-relative d-flex flex-column justify-content-between">
               <span class="badge bg-info text-dark position-absolute top-0 end-0 m-3">Most Popular</span>
               <div>
@@ -446,7 +500,7 @@
           </div>
 
           <!-- Tier 3 -->
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4">
             <div class="glass-card p-4 h-100 position-relative d-flex flex-column justify-content-between">
               <div>
                 <span class="badge bg-secondary text-info mb-2">Enterprise SaaS</span>
@@ -669,6 +723,16 @@
     </div>
   </footer>
 
+  <!-- Floating Action Buttons -->
+  <div class="floating-controls">
+    <button type="button" class="float-btn" id="themeToggleBtn" aria-label="Toggle Light or Dark Theme">
+      <i class="bi bi-sun-fill" id="themeIcon"></i>
+    </button>
+    <button type="button" class="float-btn" id="backToTop" aria-label="Scroll Back to Top" style="display: none;">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+  </div>
+
   <!-- Demo Booking Modal -->
   <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -722,6 +786,7 @@
   <!-- Scripts -->
   <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
   <script defer src="./assets/js/aos.js"></script>
+  <script defer src="./assets/js/vendor.js"></script>
   <script defer src="./assets/js/main.js"></script>
   <script defer src="./assets/js/custom.js"></script>
 
