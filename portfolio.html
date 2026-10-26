@@ -20,9 +20,15 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/animations.css">
   <link rel="stylesheet" href="./assets/css/responsive.css">
-  <!-- SEO: Canonical, Open Graph, Twitter -->
+  <!-- GEO & LLM Machine Readability -->
+  <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context">
   <link rel="canonical" href="https://swarajyainfotech.in/portfolio.html">
+  <meta name="author" content="Prasad Nimbalkar">
+  <meta property="article:author" content="https://swarajyainfotech.in/author-prasad-nimbalkar.html">
+  <meta property="article:published_time" content="2024-02-10T09:00:00+05:30">
+  <meta property="article:modified_time" content="2026-10-26T12:00:00+05:30">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SWARAJYA INFOTECH">
   <meta property="og:title" content="Our Project Portfolio | SWARAJYA INFOTECH Success">
   <meta property="og:description" content="View our proven track record of successful enterprise software projects. Read case studies detailing our innovative cloud migration and ERP solutions.">
   <meta property="og:image" content="https://swarajyainfotech.in/Logo.png">
@@ -31,6 +37,106 @@
   <meta name="twitter:title" content="Our Project Portfolio | SWARAJYA INFOTECH Success">
   <meta name="twitter:description" content="View our proven track record of successful enterprise software projects. Read case studies detailing our innovative cloud migration and ERP solutions.">
   <meta name="twitter:image" content="https://swarajyainfotech.in/Logo.png">
+
+  <!-- GEO Structured Data: CollectionPage, ItemList, Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://swarajyainfotech.in/portfolio.html#webpage",
+        "url": "https://swarajyainfotech.in/portfolio.html",
+        "name": "Enterprise Project Portfolio & Case Studies | SWARAJYA INFOTECH",
+        "isPartOf": {
+          "@id": "https://swarajyainfotech.in/#website"
+        },
+        "description": "Proven real-world deployments and live demo platforms developed by SWARAJYA INFOTECH across Education, Healthcare, Enterprise ERP, and Hospitality.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://swarajyainfotech.in/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://swarajyainfotech.in/portfolio.html"
+            }
+          ]
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Prasad Nimbalkar",
+          "jobTitle": "Founder & Principal Software Architect",
+          "url": "https://swarajyainfotech.in/author-prasad-nimbalkar.html"
+        },
+        "datePublished": "2024-02-10T09:00:00+05:30",
+        "dateModified": "2026-10-26T12:00:00+05:30",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "WebSite",
+              "position": 1,
+              "name": "Dnyanpeeth International Academy Education Portal",
+              "url": "https://school-demo.swarajyainfotech.in/",
+              "description": "Complete digital education platform for admissions, faculty records, student management, and academics."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 2,
+              "name": "Pragati Business ERP Suite",
+              "url": "https://erp-demo.swarajyainfotech.in/",
+              "applicationCategory": "BusinessApplication",
+              "description": "Enterprise cloud ERP demonstration covering procurement, CRM, billing, payroll, and business analytics."
+            },
+            {
+              "@type": "WebSite",
+              "position": 3,
+              "name": "The Royal Sahyadri Resort & Spa Booking Platform",
+              "url": "https://resort-demo.swarajyainfotech.in/",
+              "description": "Hospitality management platform with online reservations, suite management, dining, and event ticketing."
+            },
+            {
+              "@type": "SoftwareApplication",
+              "position": 4,
+              "name": "Sanjeevani Multispeciality Hospital Management System",
+              "url": "https://hospital-demo.swarajyainfotech.in/",
+              "applicationCategory": "HealthApplication",
+              "description": "Healthcare clinical portal for OPD registration, doctor schedules, electronic medical records, and billing."
+            },
+            {
+              "@type": "WebSite",
+              "position": 5,
+              "name": "Modern High-Performance E-commerce Store",
+              "url": "https://e-com-demo.swarajyainfotech.in/",
+              "description": "E-commerce platform with fast cart checkout, payment gateway integration, and real-time inventory synchronization."
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://swarajyainfotech.in/#organization",
+        "name": "SWARAJYA INFOTECH",
+        "url": "https://swarajyainfotech.in/",
+        "logo": "https://swarajyainfotech.in/Logo.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/swarajya-info-tech/",
+          "https://www.youtube.com/@swarajya_info_tech",
+          "https://www.instagram.com/swarajya_info_tech",
+          "https://www.facebook.com/share/1JwJnSbPMu/",
+          "https://x.com/SWARAJYAINFOTE"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -99,17 +205,25 @@
         <span class="badge-swarajya mb-2">Our Expertise</span>
         <h1 class="display-5 fw-bold">Industries & Technologies</h1>
         <p class="text-muted max-w-700 mx-auto">Discover the wide range of industries we empower and the cutting-edge technologies we use to deliver innovative digital solutions.</p>
+        <div class="mt-3 fs-7 text-muted">
+          <span><i class="bi bi-person-circle text-info me-1"></i>Curated by <a href="./author-prasad-nimbalkar.html" class="text-info text-decoration-none fw-semibold">Prasad Nimbalkar</a> (Chief Software Architect)</span>
+          <span class="mx-2">&bull;</span>
+          <span><i class="bi bi-clock-history text-info me-1"></i>Updated: October 26, 2026</span>
+          <span class="mx-2">&bull;</span>
+          <span><i class="bi bi-patch-check-fill text-info me-1"></i>100% Production-Grade Implementations</span>
+        </div>
       </div>
     </section>
 
-        <!-- Industries and Technologies -->
+    <!-- Industries and Technologies -->
     <section class="py-5">
       <div class="container">
 
         <div class="row g-5">
           <!-- Industries We Serve -->
           <div class="col-lg-6" data-aos="fade-right">
-            <h2 class="h3 fw-bold mb-4 text-cyan">Industries We Serve</h2>
+            <h2 class="h3 fw-bold mb-3 text-cyan">Which industries does Swarajya Infotech serve?</h2>
+            <p class="text-muted fs-7 mb-4">SWARAJYA INFOTECH serves growing mid-market enterprises across Education, Healthcare, Manufacturing, Retail, and Logistics throughout Maharashtra and India with custom-engineered software.</p>
             <div class="d-flex flex-wrap gap-3">
               <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light px-4 py-3 fs-6 rounded-pill"><i class="bi bi-building me-2 text-info"></i> Schools & Colleges</span>
               <span class="badge bg-secondary bg-opacity-25 border border-secondary text-light px-4 py-3 fs-6 rounded-pill"><i class="bi bi-hospital me-2 text-info"></i> Hospitals & Clinics</span>
@@ -125,7 +239,8 @@
 
           <!-- Technologies We Work With -->
           <div class="col-lg-6" data-aos="fade-left">
-            <h2 class="h3 fw-bold mb-4 text-cyan">Technologies We Work With</h2>
+            <h2 class="h3 fw-bold mb-3 text-cyan">What core technologies do we architect with?</h2>
+            <p class="text-muted fs-7 mb-4">We build mission-critical enterprise systems using high-concurrency backend languages, modern reactive frontend frameworks, and industrial IoT protocols.</p>
             <div class="d-flex flex-wrap gap-2">
               <span class="badge bg-dark border border-secondary px-3 py-2 fs-6">.NET</span>
               <span class="badge bg-dark border border-secondary px-3 py-2 fs-6">C#</span>
@@ -157,8 +272,8 @@
         <!-- Section Header -->
         <div class="text-center mb-5" data-aos="fade-up">
           <span class="badge-swarajya mb-2">LIVE DEMO PROJECTS</span>
-          <h2 class="display-6 fw-bold text-white mb-3">Explore Our Industry Solutions</h2>
-          <p class="text-muted max-w-700 mx-auto">Experience real-world digital solutions designed and developed by SWARAJYA INFOTECH for different industries.</p>
+          <h2 class="display-6 fw-bold text-white mb-3">What real-world enterprise software has Swarajya Infotech deployed?</h2>
+          <p class="text-muted max-w-700 mx-auto">Experience 5 live, fully interactive demonstration environments engineered by SWARAJYA INFOTECH to validate architecture, UI speed, and role-based permissions.</p>
         </div>
 
         <!-- Optional Category Filter -->
@@ -274,6 +389,36 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Standards & Engineering Citation -->
+    <section class="py-5 border-top border-secondary border-opacity-25 bg-black bg-opacity-25">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8" data-aos="fade-right">
+            <span class="badge-swarajya mb-2"><i class="bi bi-award-fill me-1"></i> Quality & Delivery Assurance</span>
+            <h2 class="h3 fw-bold mb-3">How do we guarantee production software reliability?</h2>
+            <blockquote class="blockquote glass-card p-4 border-start border-4 border-info">
+              <p class="fs-6 text-light mb-2 fst-italic">"Real-world enterprise adoption isn't measured by slide decks; it is proven in live staging environments under load. Every demo platform in our portfolio represents production-ready architecture designed for horizontal scalability, sub-second API latency, and zero data leakage."</p>
+              <footer class="blockquote-footer text-cyan mt-2">
+                <cite title="Prasad Nimbalkar"><a href="./author-prasad-nimbalkar.html" class="text-cyan text-decoration-none fw-bold">Prasad Nimbalkar</a></cite>, Founder & Principal Architect, SWARAJYA INFOTECH
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="glass-card p-4">
+              <h3 class="h6 text-cyan fw-bold text-uppercase mb-2"><i class="bi bi-check2-circle me-1"></i> Development Standards</h3>
+              <p class="fs-7 text-muted mb-3">Engineered strictly against <a href="https://www.w3.org/standards/" target="_blank" rel="noopener noreferrer external" class="text-white text-decoration-underline">W3C Web Standards</a> and <a href="https://nasscom.in/" target="_blank" rel="noopener noreferrer external" class="text-white text-decoration-underline">NASSCOM</a> software delivery benchmarks.</p>
+              <div class="d-flex align-items-center gap-2 text-info fs-7">
+                <i class="bi bi-check-circle-fill"></i> Automated CI/CD Testing
+              </div>
+              <div class="d-flex align-items-center gap-2 text-info fs-7 mt-1">
+                <i class="bi bi-check-circle-fill"></i> SSL/TLS A+ Security Rating
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

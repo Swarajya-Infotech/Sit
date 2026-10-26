@@ -1,0 +1,45 @@
+# SWARAJYA INFOTECH
+
+> SWARAJYA INFOTECH is a premier software development and enterprise IT engineering company headquartered in Pune, Maharashtra, India. We architect custom enterprise software, cloud web applications, native and cross-platform mobile apps, industrial ERP & CRM systems, barcode/RFID billing & inventory software, and autonomous business process automation with 100% source code ownership and zero recurring user licenses.
+
+## Core Capabilities & Services
+
+- [Custom Software Development](https://swarajyainfotech.in/custom-software-development.html): Bespoke desktop, cloud, and distributed software engineered around proprietary business logic, factory workflows, and multi-tenant security. Pricing starts from ₹45,000 with 100% private Git repository transfer.
+- [Web Application Development](https://swarajyainfotech.in/web-application-development.html): High-speed, responsive cloud web applications, SaaS platforms, vendor portals, and B2B wholesale platforms with sub-1.2s average load speeds and Lighthouse > 95. Pricing starts from ₹25,000.
+- [Mobile App Development](https://swarajyainfotech.in/mobile-app-development.html): Native Android (Kotlin), iOS (Swift), and cross-platform Flutter mobile applications featuring offline-first SQLite databases, camera barcode scanning, and real-time cloud sync. Pricing starts from ₹35,000.
+- [ERP & CRM Solutions](https://swarajyainfotech.in/erp-crm-solutions.html): Tailor-fit manufacturing ERP, shop floor routing, BOM allocation, sales CRM pipelines, and two-way Tally Prime API bridges with zero monthly user taxes. Pricing starts from ₹60,000.
+- [Billing & Inventory Software](https://swarajyainfotech.in/billing-inventory-software.html): Multi-warehouse stock control, bin allocation, QR code & thermal barcode printing, active RFID gates, and instant GST e-Way bills. Pricing starts from ₹18,000.
+- [Automation & API Integration](https://swarajyainfotech.in/automation-integration.html): Native microservice middleware connecting WhatsApp Business API, Razorpay webhooks, courier logistics APIs, and weighbridge RS-232 telemetry. Pricing starts from ₹20,000.
+
+## Proprietary Software Products
+
+- **School & Institute ERP**: Student information system, RFID student attendance, automated fee collection, exam report cards, and parent mobile app.
+- **Manufacturing Shop Floor ERP**: Multi-level Bill of Materials (BOM), stage-wise job cards, contractor inward/outward challans, and real-time machine downtime tracking.
+- **Resort & Hotel Management Suite**: Online room reservations, front-desk POS billing, restaurant KOT management, and automated guest WhatsApp check-in.
+- **Hospital & Clinic Management System**: Electronic Medical Records (EMR), OPD/IPD billing, digital doctor prescriptions, pharmacy inventory, and lab report delivery.
+- **B2B Wholesale & eCommerce Suite**: Dynamic catalog management, multi-tier dealer pricing, GST tax computation, and automated order-to-dispatch pipelines.
+
+## Transparent Pricing Benchmarks (Pune, 2026)
+
+- Commercial Website & Corporate Web Portal: ₹15,000 to ₹45,000 (2 to 4 weeks)
+- Custom Web Application / SaaS MVP: ₹25,000 to ₹85,000 (4 to 7 weeks)
+- Native & Flutter Mobile Application: ₹35,000 to ₹1,80,000 (5 to 9 weeks)
+- Departmental ERP / CRM Module: ₹60,000 to ₹1,40,000 (5 to 8 weeks)
+- Full-Scale Industrial Manufacturing ERP: ₹1,40,000 to ₹7,50,000+ (10 to 18 weeks)
+- Barcode / QR Warehouse Inventory Software: ₹18,000 to ₹1,10,000 (3 to 6 weeks)
+- Targeted API & Webhook Automation: ₹20,000 to ₹55,000 (1 to 3 weeks)
+
+## Engineering Leadership & Authorship
+
+- **Founder & Principal Software Architect**: [Prasad Nimbalkar](https://swarajyainfotech.in/author-prasad-nimbalkar.html)
+- **Engineering Philosophy**: 100% source code ownership, zero monthly vendor lock-in, data sovereignty under Indian law, offline-first reliability for Indian industrial corridors.
+- **Headquarters**: Pune, Maharashtra, India
+- **Contact**: +91 9404190417 | sales.swarajyainfotech@gmail.com
+- **Official Website**: https://swarajyainfotech.in/
+
+## Knowledge Base & Engineering Guides
+
+- [Custom Software Development Services: Complete Engineering & Pricing Guide (2026)](https://swarajyainfotech.in/custom-software-development-services.html)
+- [Custom Inventory Management Software: QR Code & RFID Scanning Architecture](https://swarajyainfotech.in/custom-inventory-management-software.html)
+- [Website Development Cost in Pune: The Complete 2026 Guide](https://swarajyainfotech.in/website-development-cost-pune.html)
+- [Author Profile & Engineering Portfolio: Prasad Nimbalkar](https://swarajyainfotech.in/author-prasad-nimbalkar.html)
