@@ -3,6 +3,12 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 
+User-agent: bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
