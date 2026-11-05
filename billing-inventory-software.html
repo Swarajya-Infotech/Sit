@@ -34,7 +34,11 @@
 
   <!-- Preconnect & Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS -->
@@ -157,15 +161,43 @@
     ]
   }
   </script>
+
+  <!-- Schema.org BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://swarajyainfotech.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://swarajyainfotech.in/services.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Billing & Inventory Software",
+      "item": "https://swarajyainfotech.in/billing-inventory-software.html"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
   <!-- Sticky Header -->
-  <header class="header-swarajya">
+    <header class="header-swarajya">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="header-brand-wrapper">
-        <a href="./index.html" class="navbar-brand-swarajya d-flex align-items-center text-decoration-none" aria-label="SWARAJYA INFOTECH Homepage">
-          <img src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="brand-logo" width="48" height="48" fetchpriority="high">
+        <a href="/" class="navbar-brand-swarajya d-flex align-items-center text-decoration-none" aria-label="SWARAJYA INFOTECH Homepage">
+          <img width="48" height="48" fetchpriority="high" decoding="async" src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="brand-logo">
           <div class="brand-text d-flex flex-column justify-content-center">
             <span class="brand-title fw-bold text-white lh-1">SWARAJYA INFOTECH</span>
             <span class="brand-tagline text-info lh-1 mt-1">Innovate &bull; Automate &bull; Elevate</span>
@@ -175,9 +207,24 @@
 
       <nav class="navmenu d-none d-lg-block" aria-label="Main Navigation">
         <ul class="d-flex align-items-center gap-2 list-unstyled m-0">
-          <li><a href="./index.html" class="nav-link-swarajya">Home</a></li>
+          <li><a href="/" class="nav-link-swarajya">Home</a></li>
           <li><a href="./about.html" class="nav-link-swarajya">About</a></li>
-          <li><a href="./services.html" class="nav-link-swarajya active">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link-swarajya dropdown-toggle active" href="./services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services <i class="bi bi-chevron-down ms-1 fs-8"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="./services.html"><i class="bi bi-grid-fill text-info me-2"></i>All Services Overview</a></li>
+              <li><hr class="dropdown-divider border-secondary opacity-25 my-1"></li>
+              <li><a class="dropdown-item" href="./custom-software-development.html"><i class="bi bi-code-slash text-info me-2"></i>Custom Software Development</a></li>
+              <li><a class="dropdown-item" href="./custom-software-development-services.html"><i class="bi bi-file-earmark-code text-info me-2"></i>Custom Software Guide</a></li>
+              <li><a class="dropdown-item" href="./web-application-development.html"><i class="bi bi-globe2 text-info me-2"></i>Web Applications</a></li>
+              <li><a class="dropdown-item" href="./mobile-app-development.html"><i class="bi bi-phone-fill text-info me-2"></i>Mobile App Development</a></li>
+              <li><a class="dropdown-item" href="./erp-crm-solutions.html"><i class="bi bi-gear-wide-connected text-info me-2"></i>ERP &amp; CRM Solutions</a></li>
+              <li><a class="dropdown-item" href="./billing-inventory-software.html"><i class="bi bi-receipt text-info me-2"></i>Billing &amp; Inventory Software</a></li>
+              <li><a class="dropdown-item" href="./automation-integration.html"><i class="bi bi-cpu-fill text-info me-2"></i>Automation &amp; API Integration</a></li>
+            </ul>
+          </li>
           <li><a href="./products.html" class="nav-link-swarajya">Products</a></li>
           <li><a href="./portfolio.html" class="nav-link-swarajya">Portfolio</a></li>
           <li><a href="./blog.html" class="nav-link-swarajya">Blog</a></li>
@@ -200,28 +247,44 @@
   <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu" aria-label="Mobile Navigation Drawer">
     <div class="offcanvas-header border-bottom border-secondary">
       <div class="d-flex flex-column">
-        <img src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="brand-logo mb-1" style="max-height: 40px; width: auto; object-fit: contain;">
+        <img width="48" height="48" fetchpriority="high" decoding="async" src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="brand-logo mb-1" style="max-height: 40px; width: auto; object-fit: contain;">
         <span class="text-white fw-bold lh-1" style="font-size: 16px;">SWARAJYA INFOTECH</span>
       </div>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close Mobile Navigation Menu"></button>
     </div>
     <div class="offcanvas-body">
       <ul class="list-unstyled">
-        <li class="mb-3"><a href="./index.html" class="text-white text-decoration-none fs-5 fw-semibold">Home</a></li>
+        <li class="mb-3"><a href="/" class="text-white text-decoration-none fs-5 fw-semibold">Home</a></li>
         <li class="mb-3"><a href="./about.html" class="text-white text-decoration-none fs-5 fw-semibold">About</a></li>
-        <li class="mb-3"><a href="./services.html" class="text-info text-decoration-none fs-5 fw-semibold">Services</a></li>
+        <li class="mb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="./services.html" class="text-white text-decoration-none fs-5 fw-semibold">Services</a>
+            <button class="btn btn-sm text-info p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileServicesNav" aria-expanded="true" aria-label="Toggle Services Menu">
+              <i class="bi bi-chevron-down fs-6"></i>
+            </button>
+          </div>
+          <div class="collapse show ps-3 mt-2" id="mobileServicesNav">
+            <ul class="list-unstyled border-start border-info border-2 ps-2 fs-7">
+              <li class="mb-2"><a href="./services.html" class="text-info text-decoration-none">All Services Overview</a></li>
+              <li class="mb-2"><a href="./custom-software-development.html" class="text-white text-decoration-none">Custom Software</a></li>
+              <li class="mb-2"><a href="./custom-software-development-services.html" class="text-white text-decoration-none">Custom Software Guide</a></li>
+              <li class="mb-2"><a href="./web-application-development.html" class="text-white text-decoration-none">Web Applications</a></li>
+              <li class="mb-2"><a href="./mobile-app-development.html" class="text-white text-decoration-none">Mobile Apps</a></li>
+              <li class="mb-2"><a href="./erp-crm-solutions.html" class="text-white text-decoration-none">ERP &amp; CRM</a></li>
+              <li class="mb-2"><a href="./billing-inventory-software.html" class="text-white text-decoration-none">Billing &amp; Inventory</a></li>
+              <li class="mb-2"><a href="./automation-integration.html" class="text-white text-decoration-none">Automation &amp; API</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="mb-3"><a href="./products.html" class="text-white text-decoration-none fs-5 fw-semibold">Products</a></li>
         <li class="mb-3"><a href="./portfolio.html" class="text-white text-decoration-none fs-5 fw-semibold">Portfolio</a></li>
         <li class="mb-3"><a href="./blog.html" class="text-white text-decoration-none fs-5 fw-semibold">Blog</a></li>
         <li class="mb-3"><a href="./contact.html" class="text-white text-decoration-none fs-5 fw-semibold">Contact</a></li>
       </ul>
-      <button type="button" class="btn btn-swarajya-primary w-100 mt-4" data-bs-toggle="modal" data-bs-target="#demoModal" data-bs-dismiss="offcanvas">
-        <i class="bi bi-calendar-check-fill me-1"></i> Book Live Demo
-      </button>
     </div>
   </div>
 
-  <main id="main-content">
+<main id="main-content">
     
     <!-- Hero Section (Two-Column Layout matching Website UI) -->
     <section class="hero-section animated-bg-mesh overflow-hidden py-5 border-bottom border-secondary border-opacity-25">
@@ -231,7 +294,7 @@
             <!-- Breadcrumbs -->
             <nav aria-label="breadcrumb" class="mb-3 d-inline-block">
               <ol class="breadcrumb breadcrumb-swarajya mb-0">
-                <li class="breadcrumb-item"><a href="./index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                <li class="breadcrumb-item"><a href="/"><i class="bi bi-house-door me-1"></i>Home</a></li>
                 <li class="breadcrumb-item"><a href="./services.html">Services</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Billing & Inventory Software</li>
               </ol>
@@ -558,6 +621,85 @@
       </div>
     </section>
 
+        <!-- Complementary Enterprise Engineering Services -->
+    <section class="py-5 bg-black bg-opacity-25 border-top border-secondary border-opacity-25">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge-swarajya text-cyan">Integrated Ecosystem</span>
+          <h2 class="display-6 fw-bold mt-2">Complementary Enterprise IT Services</h2>
+          <p class="text-muted max-w-700 mx-auto">Interconnect your business operations with our full-stack enterprise technology stack—100% source code ownership and zero recurring user licenses.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-code-slash"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Custom Software Development</h3>
+                <p class="fs-7 text-muted mb-3">Bespoke enterprise applications engineered with 100% source code ownership and custom database architecture.</p>
+              </div>
+              <a href="./custom-software-development.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>\n          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">ERP & CRM Solutions</h3>
+                <p class="fs-7 text-muted mb-3">Tailored ERP platforms with multi-branch stock, GST invoicing, and two-way Tally Prime integrations.</p>
+              </div>
+              <a href="./erp-crm-solutions.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>\n          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-cpu"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Automation & API Integration</h3>
+                <p class="fs-7 text-muted mb-3">Connect WhatsApp Business, payment gateways, shipping aggregators, and weighing scale RS-232 telemetry.</p>
+              </div>
+              <a href="./automation-integration.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>\n          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-globe2"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Web Application Development</h3>
+                <p class="fs-7 text-muted mb-3">High-speed cloud SaaS platforms, client portals, and responsive business backends.</p>
+              </div>
+              <a href="./web-application-development.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>\n          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-phone"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Mobile App Development</h3>
+                <p class="fs-7 text-muted mb-3">Native Android, iOS, and Flutter companion mobile apps with offline synchronization and camera scanning.</p>
+              </div>
+              <a href="./mobile-app-development.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>\n          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-upc-scan"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">RFID Inventory Architecture Guide</h3>
+                <p class="fs-7 text-muted mb-3">Complete technical guide on QR and RFID tags, scanner hardware, and automated warehouse auditing.</p>
+              </div>
+              <a href="./custom-inventory-management-software.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="icon-box-swarajya mb-3"><i class="bi bi-file-earmark-text"></i></div>
+                <h3 class="h5 fw-bold text-white mb-2">Custom Software Engineering Guide</h3>
+                <p class="fs-7 text-muted mb-3">Exhaustive engineering manual detailing 100% source code handover, architecture choices, and sprint timelines.</p>
+              </div>
+              <a href="./custom-software-development-services.html" class="fs-8 text-info text-decoration-none fw-semibold">Explore Service &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ Accordion -->
     <section class="py-5 bg-dark border-top border-bottom border-secondary border-opacity-25">
       <div class="container">
@@ -673,65 +815,87 @@
   </div>
 
   <!-- Standard Footer -->
-  <footer class="footer-swarajya bg-dark text-white pt-5 pb-4 border-top border-secondary">
+    <footer class="footer-swarajya">
     <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="d-flex align-items-center mb-3">
-            <img src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="brand-logo me-2" width="40" height="40">
-            <span class="brand-title fw-bold text-white fs-5">SWARAJYA INFOTECH</span>
-          </div>
-          <p class="fs-7 text-muted mb-3">
-            Pioneering digital transformation through bespoke web engineering, inventory software, and industrial automation. Empowering Indian enterprises with 100% source code ownership.
-          </p>
-          <div class="d-flex gap-2">
-            <a href="https://www.linkedin.com/company/swarajya-info-tech/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.instagram.com/swarajya_info_tech" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/919404190417" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary rounded-circle" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-md-6">
+          <a href="/" class="d-inline-flex flex-column text-decoration-none mb-3">
+            <img width="48" height="48" loading="lazy" decoding="async" src="./Logo.png" alt="SWARAJYA INFOTECH Logo" class="footer-brand-logo">
+            <span class="footer-brand-title fw-bold text-white lh-1 mt-2">SWARAJYA INFOTECH</span>
+            <span class="footer-brand-tagline text-info lh-1 mt-1">Innovate &bull; Automate &bull; Elevate</span>
+          </a>
+          <p class="fs-7 mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Pune, Maharashtra, India</p>
+          <p class="fs-7 mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><a href="tel:+919404190417" class="text-decoration-none text-reset">+91 9404190417</a></p>
+          <p class="fs-7 mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i><a href="mailto:sales.swarajyainfotech@gmail.com" class="text-decoration-none text-reset">sales.swarajyainfotech@gmail.com</a></p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://www.linkedin.com/company/swarajya-info-tech/" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a>
+            <a href="https://www.youtube.com/@swarajya_info_tech" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i><span class="visually-hidden">YouTube</span></a>
+            <a href="https://www.instagram.com/swarajya_info_tech?igsh=NDRscmZvdXhlcmx2&igsi=NDRscmZvdXhlcmx2" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a>
+            <a href="https://wa.me/919404190417" class="social-icon-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i><span class="visually-hidden">WhatsApp</span></a>
+            <a href="https://www.facebook.com/share/1JwJnSbPMu/" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a>
+            <a href="https://x.com/SWARAJYAINFOTE" class="social-icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i><span class="visually-hidden">X (Twitter)</span></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6">
-          <h3 class="h6 text-white text-uppercase tracking-wider mb-3">Core Services</h3>
-          <ul class="list-unstyled fs-7 mb-0">
-            <li class="mb-2"><a href="./custom-software-development-services.html" class="text-muted text-decoration-none">Custom Software</a></li>
-            <li class="mb-2"><a href="./web-application-development.html" class="text-muted text-decoration-none">Web Applications</a></li>
-            <li class="mb-2"><a href="./mobile-app-development.html" class="text-muted text-decoration-none">Mobile App Development</a></li>
-            <li class="mb-2"><a href="./erp-crm-solutions.html" class="text-muted text-decoration-none">ERP & CRM Solutions</a></li>
-            <li class="mb-2"><a href="./billing-inventory-software.html" class="text-info text-decoration-none">Billing & Inventory</a></li>
-            <li><a href="./automation-integration.html" class="text-muted text-decoration-none">Automation & Integration</a></li>
+        <div class="col-6 col-lg-2 col-md-6">
+          <h3 class="h5 text-white">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./blog.html">Blog &amp; Insights</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+            <li><a href="./faq.html">FAQ / Help</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-6">
+          <h3 class="h5 text-white">Core Services</h3>
+          <ul class="footer-links">
+            <li><a href="./custom-software-development.html">Custom Software</a></li>
+            <li><a href="./web-application-development.html">Web Applications</a></li>
+            <li><a href="./mobile-app-development.html">Mobile App Dev</a></li>
+            <li><a href="./erp-crm-solutions.html">ERP &amp; CRM Solutions</a></li>
+            <li><a href="./billing-inventory-software.html">Billing &amp; Inventory</a></li>
+            <li><a href="./automation-integration.html">Automation &amp; API</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-6">
+          <h3 class="h5 text-white">Engineering Guides</h3>
+          <ul class="footer-links">
+            <li><a href="./custom-software-development-services.html">Custom Software Guide</a></li>
+            <li><a href="./custom-inventory-management-software.html">Inventory Software Guide</a></li>
+            <li><a href="./website-development-cost-pune.html">Website Cost in Pune</a></li>
+            <li><a href="./author-prasad-nimbalkar.html">Lead Author Bio</a></li>
+            <li><a href="./blog.html">All Technical Articles</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <h3 class="h6 text-white text-uppercase tracking-wider mb-3">Knowledge Base</h3>
-          <ul class="list-unstyled fs-7 mb-0">
-            <li class="mb-2"><a href="./custom-inventory-management-software.html" class="text-muted text-decoration-none">Custom Inventory Guide</a></li>
-            <li class="mb-2"><a href="./custom-software-development-services.html" class="text-muted text-decoration-none">Custom Software Guide</a></li>
-            <li class="mb-2"><a href="./website-development-cost-pune.html" class="text-muted text-decoration-none">Website Development Cost</a></li>
-            <li class="mb-2"><a href="./author-prasad-nimbalkar.html" class="text-muted text-decoration-none">Author: Prasad Nimbalkar</a></li>
-            <li><a href="./blog.html" class="text-muted text-decoration-none">All Engineering Articles</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <h3 class="h5 text-white">Pune Engineering Office</h3>
-          <p class="fs-7 text-muted mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Pune, Maharashtra, India</p>
-          <p class="fs-7 text-muted mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 9404190417</p>
-          <p class="fs-7 text-muted mb-3"><i class="bi bi-envelope-fill text-primary me-2"></i>sales.swarajyainfotech@gmail.com</p>
-          <button type="button" class="btn btn-swarajya-primary btn-sm" data-bs-toggle="modal" data-bs-target="#demoModal">
+          <h3 class="h5 text-white">Newsletter &amp; Demo</h3>
+          <p class="fs-7">Subscribe for enterprise tech updates and engineering insights.</p>
+          <form id="newsletterForm" class="mt-2 mb-3">
+            <div class="input-group">
+              <input type="hidden" name="formType" value="newsletter">
+              <input type="email" name="email" class="form-control bg-dark border-secondary text-white" placeholder="Enter your email" required aria-label="Newsletter Email Input">
+              <button class="btn btn-swarajya-primary" type="submit" aria-label="Subscribe to Newsletter"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <button type="button" class="btn btn-swarajya-outline btn-sm w-100" data-bs-toggle="modal" data-bs-target="#demoModal">
             <i class="bi bi-calendar-check-fill me-1"></i> Request Live Demo
           </button>
         </div>
       </div>
 
-      <div class="row pt-4 border-top border-secondary border-opacity-25 fs-8 text-muted">
-        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-          &copy; 2026 SWARAJYA INFOTECH. All rights reserved. Hand-crafted with modern web standards.
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="./privacy.html" class="text-muted text-decoration-none me-3">Privacy Policy</a>
-          <a href="./terms.html" class="text-muted text-decoration-none">Terms of Service</a>
+      <div class="border-top border-secondary border-opacity-25 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center fs-7 text-muted">
+        <div>&copy; 2026 SWARAJYA INFOTECH. All rights reserved.</div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="./privacy.html" class="text-muted">Privacy Policy</a>
+          <a href="./terms.html" class="text-muted">Terms of Service</a>
+          <a href="./sitemap.xml" class="text-muted">Sitemap</a>
         </div>
       </div>
     </div>
@@ -742,57 +906,72 @@
     <button type="button" class="float-btn" id="themeToggleBtn" aria-label="Toggle Light or Dark Theme">
       <i class="bi bi-sun-fill" id="themeIcon"></i>
     </button>
+    <a href="https://wa.me/919404190417" target="_blank" rel="noopener noreferrer" class="float-btn text-success" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
     <button type="button" class="float-btn" id="backToTop" aria-label="Scroll Back to Top" style="display: none;">
       <i class="bi bi-arrow-up-short"></i>
     </button>
   </div>
 
-  <!-- Demo Booking Modal -->
-  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <!-- Book Demo Modal -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-label="Schedule Technical Demo Modal">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content bg-dark text-white border-secondary">
-        <div class="modal-header border-secondary">
-          <div class="d-flex align-items-center">
-            <img src="./Logo.png" alt="SWARAJYA INFOTECH" width="28" height="28" class="me-2">
-            <h5 class="modal-title" id="demoModalLabel">Schedule Inventory Software Demo</h5>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content glass-card border-0 text-white">
+        <div class="modal-header border-bottom border-secondary">
+          <h3 class="modal-title h5 fw-bold"><i class="bi bi-calendar-check-fill text-cyan me-2"></i>Schedule Technical Demo</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Modal"></button>
         </div>
-        <div class="modal-body p-4">
-          <form id="inventoryDemoForm">
-            <input type="hidden" name="_subject" value="New Billing & Inventory Software Request">
-            <input type="hidden" name="formType" value="Inventory Demo Request">
-            
+        <div class="modal-body">
+          <form id="swarajyaContactForm" action="https://formsubmit.co/sales.swarajyainfotech@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Live Demo Booking Request">
+            <input type="hidden" name="formType" value="Schedule Technical Demo">
+            <input type="text" name="website_hp" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
             <div class="mb-3">
               <label class="form-label text-white fs-7 fw-semibold" for="demoName">FULL NAME *</label>
-              <input type="text" id="demoName" name="name" class="form-control bg-dark text-white border-secondary" placeholder="Nilesh More" required>
+              <input type="text" id="demoName" name="name" class="form-control bg-dark text-white border-secondary" placeholder="Rahul Sharma" required>
             </div>
             <div class="mb-3">
-              <label class="form-label text-white fs-7 fw-semibold" for="demoEmail">CORPORATE EMAIL *</label>
-              <input type="email" id="demoEmail" name="email" class="form-control bg-dark text-white border-secondary" placeholder="nilesh@traders.in" required>
+              <label class="form-label text-white fs-7 fw-semibold" for="demoEmail">CORPORATE EMAIL</label>
+              <input type="email" id="demoEmail" name="email" class="form-control bg-dark text-white border-secondary" placeholder="rahul@company.in">
             </div>
             <div class="mb-3">
               <label class="form-label text-white fs-7 fw-semibold" for="demoPhone">PHONE NUMBER *</label>
               <input type="tel" id="demoPhone" name="phone" class="form-control bg-dark text-white border-secondary" placeholder="+91 9404190417" required>
             </div>
             <div class="mb-3">
-              <label class="form-label text-white fs-7 fw-semibold" for="demoProduct">SERVICE OF INTEREST</label>
-              <select id="demoProduct" name="product" class="form-select bg-dark text-white border-secondary">
-                <option value="Billing & Inventory Software" selected>Billing & Inventory Software (GST & QR)</option>
-                <option value="Multi-Warehouse Inventory">Multi-Warehouse QR / Barcode System</option>
-                <option value="Industrial RFID System">Industrial RFID Gate Telemetry</option>
-                <option value="Tally Prime Integration">Tally Prime Invoicing Sync</option>
+              <label class="form-label text-white fs-7 fw-semibold" for="demoProduct">PRODUCT OR SERVICE OF INTEREST</label>
+              <select id="demoProduct" name="service" class="form-select bg-dark text-white border-secondary">
+                <option value="Custom Business Software">Custom Software Development</option>
+                <option value="ERP & CRM Platform">ERP &amp; CRM Solutions</option>
+                <option value="Billing & Inventory System">Billing &amp; Inventory Software</option>
+                <option value="Web & Mobile Applications">Web &amp; Mobile Applications</option>
+                <option value="Industrial Automation & IoT">Automation &amp; API Integration</option>
               </select>
             </div>
             <div class="mb-3">
-              <label class="form-label text-white fs-7 fw-semibold" for="demoMsg">MESSAGE / WAREHOUSE BOTTLENECK</label>
-              <textarea id="demoMsg" name="message" class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Tell us briefly about your warehouse size, SKUs, or inventory tracking requirements..."></textarea>
+              <label class="form-label text-white fs-7 fw-semibold" for="demoMsg">MESSAGE / REQUIREMENTS</label>
+              <textarea id="demoMsg" name="message" class="form-control bg-dark text-white border-secondary" rows="3" placeholder="Tell us briefly about your operational goals..."></textarea>
             </div>
             <button type="submit" class="btn btn-swarajya-primary w-100 py-2 mt-2">
               <i class="bi bi-send-fill me-2"></i>Submit Booking Request
             </button>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container for Form Feedback -->
+  <div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 1100;">
+    <div id="formToast" class="toast bg-success text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div id="toastMessage" class="toast-body fs-7">
+          <i class="bi bi-check-circle-fill me-2"></i> Request submitted successfully! Our engineering team will reach out shortly.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close Toast Notification"></button>
       </div>
     </div>
   </div>

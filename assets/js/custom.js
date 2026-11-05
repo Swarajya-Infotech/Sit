@@ -1,9 +1,6 @@
 /**
  * Swarajya Infotech Enterprise Google Sheets CRM v2.0.0 Client Integration
- * Architected by Google Staff Engineer Code Review Standards
- * Account: prasadnimbalkar2555@gmail.com
- * Repository: https://github.com/Its-Prasad-Raje/sit-software
- * Live Site: https://its-prasad-raje.github.io/sit-software/
+ * Standardized for High Performance Web Architecture
  */
 
 // Deployed Google Apps Script Web App URL (Replace with your deployed Web App URL)

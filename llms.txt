@@ -4,6 +4,7 @@
 
 ## Core Capabilities & Services
 
+- [IT Services Overview](https://swarajyainfotech.in/services.html): Full-spectrum IT services in Pune, from custom enterprise software to cloud solutions and systems integration.
 - [Custom Software Development](https://swarajyainfotech.in/custom-software-development.html): Bespoke desktop, cloud, and distributed software engineered around proprietary business logic, factory workflows, and multi-tenant security. Pricing starts from ₹45,000 with 100% private Git repository transfer.
 - [Web Application Development](https://swarajyainfotech.in/web-application-development.html): High-speed, responsive cloud web applications, SaaS platforms, vendor portals, and B2B wholesale platforms with sub-1.2s average load speeds and Lighthouse > 95. Pricing starts from ₹25,000.
 - [Mobile App Development](https://swarajyainfotech.in/mobile-app-development.html): Native Android (Kotlin), iOS (Swift), and cross-platform Flutter mobile applications featuring offline-first SQLite databases, camera barcode scanning, and real-time cloud sync. Pricing starts from ₹35,000.
@@ -13,6 +14,7 @@
 
 ## Proprietary Software Products
 
+- [Software Product Suite](https://swarajyainfotech.in/products.html): Comprehensive enterprise platforms including RFID attendance, inventory management, healthcare ERP, and hotel POS suites.
 - **School & Institute ERP**: Student information system, RFID student attendance, automated fee collection, exam report cards, and parent mobile app.
 - **Manufacturing Shop Floor ERP**: Multi-level Bill of Materials (BOM), stage-wise job cards, contractor inward/outward challans, and real-time machine downtime tracking.
 - **Resort & Hotel Management Suite**: Online room reservations, front-desk POS billing, restaurant KOT management, and automated guest WhatsApp check-in.
@@ -43,3 +45,7 @@
 - [Custom Inventory Management Software: QR Code & RFID Scanning Architecture](https://swarajyainfotech.in/custom-inventory-management-software.html)
 - [Website Development Cost in Pune: The Complete 2026 Guide](https://swarajyainfotech.in/website-development-cost-pune.html)
 - [Author Profile & Engineering Portfolio: Prasad Nimbalkar](https://swarajyainfotech.in/author-prasad-nimbalkar.html)
+- [Frequently Asked Questions (FAQ)](https://swarajyainfotech.in/faq.html)
+- [Engineering & IT Careers at SWARAJYA INFOTECH](https://swarajyainfotech.in/careers.html)
+- [Corporate Privacy Policy](https://swarajyainfotech.in/privacy.html)
+- [Terms & Conditions of Service](https://swarajyainfotech.in/terms.html)
