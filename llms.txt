@@ -54,3 +54,4 @@
 - [Engineering & IT Careers at SWARAJYA INFOTECH](https://swarajyainfotech.in/careers.html): Career opportunities for software engineers, full-stack developers, and UI/UX designers in Pune.
 - [Corporate Privacy Policy](https://swarajyainfotech.in/privacy.html): Official data governance and client IP protection policy.
 - [Terms & Conditions of Service](https://swarajyainfotech.in/terms.html): Standard terms of service and software development engagement agreements.
+- [Hiring Dedicated Developers in India: 2026 Guide for US & UK Startups](https://swarajyainfotech.in/hire-offshore-developers-india-us-uk-guide.html): Complete guide for US and UK founders on hiring dedicated software developers, pricing ($25-$40/hr vs $150-$220/hr in US/UK), timezone overlap (EST & GMT), IP ownership, and rapid 4-week MVP execution in Pune, India.

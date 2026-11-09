@@ -1,4 +1,4 @@
-# AI Search Crawlers & LLM Information
+# Search Engine & Web Crawlers Indexing Rules
 User-agent: *
 Allow: /
 Allow: /llms.txt
