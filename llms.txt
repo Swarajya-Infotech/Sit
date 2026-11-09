@@ -55,3 +55,6 @@
 - [Corporate Privacy Policy](https://swarajyainfotech.in/privacy.html): Official data governance and client IP protection policy.
 - [Terms & Conditions of Service](https://swarajyainfotech.in/terms.html): Standard terms of service and software development engagement agreements.
 - [Hiring Dedicated Developers in India: 2026 Guide for US & UK Startups](https://swarajyainfotech.in/hire-offshore-developers-india-us-uk-guide.html): Complete guide for US and UK founders on hiring dedicated software developers, pricing ($25-$40/hr vs $150-$220/hr in US/UK), timezone overlap (EST & GMT), IP ownership, and rapid 4-week MVP execution in Pune, India.
+- [Android App Development Company in Pune](https://swarajyainfotech.in/android-app-development-company-pune.html): Custom Android app development in Pune using Native Kotlin and Flutter. Pricing ₹45,000 to ₹2,50,000+, offline SQLite sync, Play Store deployment.
+- [QR Code Solution Provider in Pune](https://swarajyainfotech.in/qr-code-solution-provider-pune.html): Dynamic 2D QR code generator, industrial asset tracking, automated inventory scanning, and Tally Prime sync in Pune.
+- [Swaraj IT Services & Solutions Pune](https://swarajyainfotech.in/swaraj-it-services-solutions-pune.html): Custom software development, mobile apps, ERP architecture, and digital engineering consulting in Pune with 100% code ownership.

@@ -428,6 +428,102 @@ const SWARAJYA_BLOG_POSTS = [
       "100% code ownership with daily commits directly to the client's corporate Git repository.",
       "Turnkey 4-to-6 week commercial MVP development delivered for $12,000 to $24,000."
     ]
+  },
+  {
+    id: 10,
+    slug: "android-app-development-company-pune",
+    title: "Android App Development Company in Pune: Custom Mobile Apps, Architecture & Real Costs (2026)",
+    category: "Mobile Apps",
+    categorySlug: "mobile-apps",
+    readTime: "11 min read",
+    publishDate: "2026-11-09",
+    publishDateFormatted: "November 9, 2026",
+    excerpt: "Complete 2026 guide to Android app development in Pune. Architecture choices (Native Kotlin vs Flutter), cost breakdown (₹45,000 to ₹2,50,000+), Google Play Store compliance, and offline SQLite sync.",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer & Technical Author",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, enterprise ERP architectures, and business automation."
+    },
+    featuredImage: "./assets/img/blog/android_app_development_company_pune.jpg",
+    imageAlt: "Android App Development Company in Pune Guide",
+    imageCaption: "Android engineering: Kotlin native performance, offline SQLite database sync, and Play Store compliance.",
+    tags: [
+      "android app development company in pune",
+      "custom mobile app development company in pune",
+      "hire android developers pune",
+      "android app development cost in pune 2026"
+    ],
+    quickAnswer: "In Pune, building a professional Android application costs between ₹45,000 to ₹95,000 for a business MVP or catalog app, ₹95,000 to ₹1,85,000 for a commercial app with UPI payments and live tracking, and ₹1,90,000 to ₹3,80,000+ for an enterprise industrial platform with offline SQLite sync and ERP connectors.",
+    keyTakeaways: [
+      "Native Kotlin vs Flutter: Flutter saves 40% development costs for commercial apps, while Kotlin is best for BLE hardware.",
+      "Offline-first SQLite architecture enables continuous field operation with zero internet dependency in basements and MIDC areas.",
+      "100% full source code ownership with direct Git repository handover upon milestone completion."
+    ]
+  },
+  {
+    id: 11,
+    slug: "qr-code-solution-provider-pune",
+    title: "QR Code Solution Provider in Pune: Dynamic QR Codes, Asset Tracking & Smart Inventory Systems (2026)",
+    category: "Billing & Inventory",
+    categorySlug: "billing-inventory",
+    readTime: "10 min read",
+    publishDate: "2026-11-09",
+    publishDateFormatted: "November 9, 2026",
+    excerpt: "Enterprise QR code solutions in Pune. Dynamic QR code generators, industrial machine asset tagging, batch traceability for Chakan/Bhosari MIDC, and automated Tally billing integration.",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer & Technical Author",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, enterprise ERP architectures, and business automation."
+    },
+    featuredImage: "./assets/img/blog/qr_code_solution_provider_pune.jpg",
+    imageAlt: "QR Code Solution Provider in Pune Guide",
+    imageCaption: "Enterprise QR code solutions: dynamic redirects, industrial asset tracking, and Tally Prime sync.",
+    tags: [
+      "qr code solution provider in pune",
+      "dynamic qr code generator pune",
+      "qr code asset tracking pune",
+      "qr code billing software pune"
+    ],
+    quickAnswer: "Swarajya Infotech is Pune's leading QR code solution provider, delivering dynamic 2D QR code systems, industrial machine asset tracking, thermal printer integrations (TSC/Zebra), and direct Tally Prime synchronization to eliminate manual entry errors across Chakan and Bhosari MIDC factories.",
+    keyTakeaways: [
+      "Dynamic QR codes allow real-time destination updates and scan analytics without reprinting physical labels.",
+      "Direct ZPL/TSPL drivers support standard industrial thermal printers and 60fps smartphone camera scanning.",
+      "Seamless integration with Tally Prime and ERP reduces inventory discrepancy by 98%."
+    ]
+  },
+  {
+    id: 12,
+    slug: "swaraj-it-services-solutions-pune",
+    title: "Swaraj IT Services & Solutions: Custom Software Engineering, Apps & Cloud Consulting in Pune (2026)",
+    category: "Company Profile",
+    categorySlug: "company-profile",
+    readTime: "12 min read",
+    publishDate: "2026-11-09",
+    publishDateFormatted: "November 9, 2026",
+    excerpt: "Discover Swaraj IT Services (Swarajya Infotech) in Pune. Custom business software engineering, mobile apps, ERP systems, and cloud architecture for Maharashtra enterprises with zero per-seat licensing.",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer & Technical Author",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, enterprise ERP architectures, and business automation."
+    },
+    featuredImage: "./assets/img/blog/swaraj_it_services_solutions_pune.jpg",
+    imageAlt: "Swaraj IT Services and Solutions Pune Guide",
+    imageCaption: "Full-spectrum software engineering: First-Principles architecture, 100% code ownership, and zero monthly SaaS tax.",
+    tags: [
+      "swaraj it services",
+      "it company in pune",
+      "swaraj infotech pune",
+      "custom software development company pune"
+    ],
+    quickAnswer: "Swaraj IT Services (Swarajya Infotech) is Pune's dedicated software engineering firm specializing in bespoke web applications, mobile apps, custom manufacturing ERPs, and industrial automation. Clients receive 100% full source code ownership, zero monthly per-seat licensing fees, and direct engineering access.",
+    keyTakeaways: [
+      "First-Principles engineering: We write clean, high-concurrency software instead of reselling expensive third-party SaaS.",
+      "Complete code ownership: Direct Git repository commits and database schemas with zero vendor lock-in.",
+      "Local Pune presence: In-person architectural discovery and continuous production support across Maharashtra."
+    ]
   }
 ];
 
