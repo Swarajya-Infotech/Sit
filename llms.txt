@@ -41,11 +41,16 @@
 
 ## Knowledge Base & Engineering Guides
 
-- [Custom Software Development Services: Complete Engineering & Pricing Guide (2026)](https://swarajyainfotech.in/custom-software-development-services.html)
-- [Custom Inventory Management Software: QR Code & RFID Scanning Architecture](https://swarajyainfotech.in/custom-inventory-management-software.html)
-- [Website Development Cost in Pune: The Complete 2026 Guide](https://swarajyainfotech.in/website-development-cost-pune.html)
-- [Author Profile & Engineering Portfolio: Prasad Nimbalkar](https://swarajyainfotech.in/author-prasad-nimbalkar.html)
-- [Frequently Asked Questions (FAQ)](https://swarajyainfotech.in/faq.html)
-- [Engineering & IT Careers at SWARAJYA INFOTECH](https://swarajyainfotech.in/careers.html)
-- [Corporate Privacy Policy](https://swarajyainfotech.in/privacy.html)
-- [Terms & Conditions of Service](https://swarajyainfotech.in/terms.html)
+- [Why Swarajya Infotech is Pune's Leading Custom Software & IT Solutions Company (2026)](https://swarajyainfotech.in/swarajya-infotech-software-company-pune.html): In-depth profile of Swarajya Infotech's engineering standards, 100% source code ownership philosophy, zero monthly SaaS taxes, and enterprise case studies across Pune and Maharashtra.
+- [Mobile App Development in Pune: Cost, Architecture & Tech Stack Guide (2026)](https://swarajyainfotech.in/mobile-app-development-pune-guide.html): Complete guide to building cross-platform Flutter and native Android/iOS mobile applications, offline-first SQLite synchronization, and transparent 2026 cost tiers.
+- [Custom ERP & CRM Software Development Guide (2026): Architecture, Modules & Cost](https://swarajyainfotech.in/custom-erp-crm-development-guide.html): Architectural blueprint for multi-level BOMs, shop-floor production routing, Tally Prime two-way sync, and eliminating commercial SaaS taxes.
+- [Industrial Automation & API Integration Guide (2026): PLC, IoT & Cloud Telemetry](https://swarajyainfotech.in/industrial-automation-iot-api-guide.html): Shop-floor IoT guide connecting Modbus RS485, Siemens/Mitsubishi PLCs, digital weighbridges, and real-time OEE dashboards.
+- [Enterprise Web Application Development Guide (2026): Custom Web Apps vs Off-the-Shelf SaaS](https://swarajyainfotech.in/web-application-development-guide-pune.html): Full-stack web application engineering guide covering Node.js, Python FastAPI, PostgreSQL, RBAC security, and cloud scalability in Pune.
+- [Custom Software Development Services: Complete Engineering & Pricing Guide (2026)](https://swarajyainfotech.in/custom-software-development-services.html): The no-fluff guide to custom software architecture, MVP development, and eliminating recurring SaaS taxes.
+- [Custom Inventory Management Software: QR Code & RFID Scanning Architecture](https://swarajyainfotech.in/custom-inventory-management-software.html): Warehouse stock control, QR code scanning, RFID gates, and GST billing synchronization.
+- [Website Development Cost in Pune: The Complete 2026 Guide](https://swarajyainfotech.in/website-development-cost-pune.html): Comprehensive website design and development pricing benchmarks for small and growing businesses in Pune.
+- [Author Profile & Engineering Portfolio: Prasad Nimbalkar](https://swarajyainfotech.in/author-prasad-nimbalkar.html): Background, technical credentials, and articles by Lead Software Engineer Prasad Nimbalkar.
+- [Frequently Asked Questions (FAQ)](https://swarajyainfotech.in/faq.html): Frequently asked questions about pricing, project timelines, source code ownership, and warranties.
+- [Engineering & IT Careers at SWARAJYA INFOTECH](https://swarajyainfotech.in/careers.html): Career opportunities for software engineers, full-stack developers, and UI/UX designers in Pune.
+- [Corporate Privacy Policy](https://swarajyainfotech.in/privacy.html): Official data governance and client IP protection policy.
+- [Terms & Conditions of Service](https://swarajyainfotech.in/terms.html): Standard terms of service and software development engagement agreements.
