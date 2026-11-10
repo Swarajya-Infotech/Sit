@@ -118,6 +118,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Track client page initialization time for anti-bot heuristics
+  const pageInitTime = Date.now();
+
+  /* -------------------------------------------------------------
+   * Helper: Escape HTML strings to eliminate DOM-based XSS
+   * ------------------------------------------------------------- */
+  function escapeHtml(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
   /* -------------------------------------------------------------
    * 4. Unified Toast Notification Helper (Success, Warning, Error)
    * ------------------------------------------------------------- */
@@ -126,29 +142,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const toastMessage = document.querySelector('#toastMessage');
 
     if (!formToast || !toastMessage) {
-      alert(message.replace(/<[^>]+>/g, ''));
+      alert(String(message).replace(/<[^>]+>/g, ''));
       return;
     }
 
     // Reset any previous alert classes
     formToast.classList.remove('bg-success', 'bg-warning', 'bg-danger', 'text-white', 'text-dark');
 
+    const safeMessage = escapeHtml(message);
+
     if (type === "warning") {
       formToast.classList.add('bg-warning', 'text-dark');
-      toastMessage.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-dark me-2"></i> ${message}`;
+      toastMessage.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-dark me-2"></i> ${safeMessage}`;
     } else if (type === "error") {
       formToast.classList.add('bg-danger', 'text-white');
-      toastMessage.innerHTML = `<i class="bi bi-x-circle-fill text-white me-2"></i> ${message}`;
+      toastMessage.innerHTML = `<i class="bi bi-x-circle-fill text-white me-2"></i> ${safeMessage}`;
     } else {
       formToast.classList.add('bg-success', 'text-white');
-      toastMessage.innerHTML = `<i class="bi bi-check-circle-fill text-white me-2"></i> ${message}`;
+      toastMessage.innerHTML = `<i class="bi bi-check-circle-fill text-white me-2"></i> ${safeMessage}`;
     }
 
     if (typeof bootstrap !== 'undefined' && bootstrap.Toast) {
       const toastInstance = bootstrap.Toast.getOrCreateInstance(formToast, { delay: 6000 });
       toastInstance.show();
     } else {
-      alert(message.replace(/<[^>]+>/g, ''));
+      alert(String(message).replace(/<[^>]+>/g, ''));
     }
   }
 
@@ -232,7 +250,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Honeypot Bot Trap Check
     if (data.website_hp && data.website_hp !== "") {
-      console.warn("Spam bot submission blocked.");
+      console.warn("Spam bot submission blocked via honeypot.");
+      return;
+    }
+
+    // Anti-Bot: Rejection of automated submissions under human reaction threshold (1.5 seconds)
+    if (Date.now() - pageInitTime < 1500) {
+      console.warn("Spam bot submission blocked via minimum reaction time threshold.");
       return;
     }
 
@@ -400,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (formTypeStr === "career" || formTypeStr === "careers") {
           showFormNotification("Application submitted successfully! Our engineering team will review your profile.", "success");
         } else {
-          const refText = leadId ? ` (Ref: ${leadId})` : "";
+          const refText = leadId ? ` (Ref: ${escapeHtml(leadId)})` : "";
           showFormNotification(
             `Thank you! Your inquiry${refText} has been received. Our Pune technical team will connect with you within 2 to 4 business hours.`,
             "success"
