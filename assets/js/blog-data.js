@@ -5,6 +5,55 @@
 
 const SWARAJYA_BLOG_POSTS = [
   {
+    id: "custom-label-printing-software",
+    slug: "custom-label-printing-software",
+    permalink: "./custom-label-printing-software.html",
+    title: "Custom Label Printing Software: Barcode, QR, Thermal & ERP Integration Guide (2026)",
+    shortDescription: "Build custom label printing software with direct Zebra ZPL, TSPL, and thermal printer integration. Eliminate per-printer licensing, automate GST barcode stickers, warehouse shipping labels, and ERP batch printing.",
+    category: "Print & Automation",
+    readTime: "12 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/custom_label_printing_software.jpg",
+    imageAlt: "Custom Label Printing Software: Barcode, QR, Thermal & ERP Integration Guide",
+    imageCaption: "Custom label printing architecture: direct web-to-print streaming to Zebra ZPL and TSC thermal heads without recurring licenses.",
+    tags: [
+      "custom label printing software",
+      "barcode label printing software",
+      "thermal printer label software pune",
+      "zebra zpl label printing software",
+      "industrial label printing software",
+      "warehouse shipping label software"
+    ],
+    quickAnswer: "Custom label printing software replaces expensive commercial software licenses like BarTender with direct web-to-print thermal drivers. It connects web browsers and ERPs directly to Zebra (ZPL), TSC (TSPL), Citizen, and Honeywell printers via TCP raw sockets (port 9100) or local WebSocket agents, enabling instant, silent batch printing in milliseconds with 100% source code ownership.",
+    keyTakeaways: [
+      "Zero recurring per-printer or per-seat license fees with 100% source code ownership.",
+      "Native ZPL II, TSPL, and ESC/POS command generation for crisp 203/300 DPI vector barcodes.",
+      "Silent background web-to-print streaming via LAN TCP sockets (port 9100) or local WebSocket microservices.",
+      "Direct atomic serialization and synchronization with PostgreSQL, MySQL, SQL Server, and Tally Prime."
+    ]
+  },
+  {
     id: "swarajya-infotech-software-company-pune",
     slug: "swarajya-infotech-software-company-pune",
     permalink: "./swarajya-infotech-software-company-pune.html",
