@@ -5,6 +5,302 @@
 
 const SWARAJYA_BLOG_POSTS = [
   {
+    id: "rfid-solution-provider-pune",
+    slug: "rfid-solution-provider-pune",
+    permalink: "./rfid-solution-provider-pune.html",
+    title: "RFID Solution Provider in Pune: UHF Asset Tracking, Warehouse Gates &amp; Smart Cards (2026)",
+    shortDescription: "Leading RFID solution provider in Pune. Custom UHF passive/active tag tracking, industrial warehouse portal gates, automated employee/student RFID attendance, and Chakan/Bhosari manufacturing traceability.",
+    category: "Auto-ID & Hardware",
+    readTime: "11 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/rfid_solution_provider_pune.jpg",
+    imageAlt: "RFID Solution Provider in Pune: UHF Asset Tracking, Warehouse Gates &amp; Smart Cards (2026)",
+    imageCaption: "RFID Solution Provider in Pune: UHF Asset Tracking, Warehouse Gates &amp; Smart Cards (2026) by Swarajya Infotech Pune.",
+    tags: ["rfid solution provider in pune", "rfid asset tracking pune", "uhf rfid warehouse gate pune", "rfid attendance system pune", "rfid tags manufacturer pune", "industrial rfid chakan"],
+    quickAnswer: "Swarajya Infotech is Pune's premier RFID solution provider and system integrator. We engineer custom UHF RFID portal gates, rugged on-metal asset tracking systems for Chakan and Bhosari factories, returnable transport item (RTI) bin tracking, and automated institutional attendance systems compliant with Indian 865-867 MHz WPC frequencies.",
+    keyTakeaways: ["WPC ETA certified UHF RFID hardware operating within Indian 865-867 MHz spectrum.", "Rugged on-metal and high-temperature RFID tags engineered for automotive shop floors.", "Instant portal gate scanning reading 200+ tags per second with 99.8% read accuracy.", "Native middleware syncing read events directly to PostgreSQL, MySQL, and SAP/Tally ERPs."]
+  },
+  {
+    id: "school-management-software-pune",
+    slug: "school-management-software-pune",
+    permalink: "./school-management-software-pune.html",
+    title: "School Management Software in Pune: Institute ERP, RFID Attendance &amp; Fee Automation (2026)",
+    shortDescription: "Looking for school management software in Pune? Swarajya Infotech builds custom school ERPs: automated fee collection via UPI/WhatsApp, gate RFID attendance, CBSE/SSC report cards, and parent mobile apps.",
+    category: "EdTech & Education",
+    readTime: "12 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/school_management_software_pune.jpg",
+    imageAlt: "School Management Software in Pune: Institute ERP, RFID Attendance &amp; Fee Automation (2026)",
+    imageCaption: "School Management Software in Pune: Institute ERP, RFID Attendance &amp; Fee Automation (2026) by Swarajya Infotech Pune.",
+    tags: ["school management software pune", "school erp software pune", "school fee collection software pune", "student attendance rfid pune", "school mobile app pune", "institute management system pune"],
+    quickAnswer: "Swarajya Infotech develops modern, cloud-based School & Institute ERP software tailored for schools, colleges, and educational trusts in Pune and Maharashtra. Our platform automates paperless online admissions, instant UPI fee reconciliation, RFID gate attendance with parent WhatsApp alerts, and compliant CBSE/State Board digital report card generation.",
+    keyTakeaways: ["Direct UPI payment gateway integration eliminating manual bank reconciliation lines.", "Automated parent WhatsApp alerts for attendance, fee dues, exam schedules, and circulars.", "RFID gate turnstile integration logging student entries and bus boarding instantly.", "Board-compliant report card grading engines (CBSE, ICSE, and Maharashtra State Board)."]
+  },
+  {
+    id: "retail-store-management-software-pune",
+    slug: "retail-store-management-software-pune",
+    permalink: "./retail-store-management-software-pune.html",
+    title: "Retail Store Management Software &amp; Supermarket POS in Pune: Barcode, Weighing Scale &amp; Multi-Outlet (2026)",
+    shortDescription: "Custom retail store management software and supermarket POS in Pune. Fast barcode scanning, electronic weighing scale RS-232 integration, offline-first billing, expiry tracking, and multi-branch retail ERP.",
+    category: "Retail & Commerce",
+    readTime: "11 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/retail_store_management_software_pune.jpg",
+    imageAlt: "Retail Store Management Software &amp; Supermarket POS in Pune: Barcode, Weighing Scale &amp; Multi-Outlet (2026)",
+    imageCaption: "Retail Store Management Software &amp; Supermarket POS in Pune: Barcode, Weighing Scale &amp; Multi-Outlet (2026) by Swarajya Infotech Pune.",
+    tags: ["retail store management software pune", "supermarket pos software pune", "grocery store billing software pune", "weighing scale pos software pune", "retail inventory billing pune", "multi store retail software pune"],
+    quickAnswer: "Swarajya Infotech builds high-speed retail store management software and supermarket POS systems in Pune. Engineered for grocery stores, garment retail, and multi-branch supermarket chains, our software delivers sub-second barcode billing, RS-232 electronic weighing scale integration, offline-first billing resilience, and automated batch expiry tracking.",
+    keyTakeaways: ["Sub-second counter checkout handling high-traffic peak hours during Diwali and Ganeshotsav.", "Direct RS-232 / USB electronic weighing scale integration for loose grains, pulses, and vegetables.", "Offline-first local SQLite billing continuing without interruption during internet outages.", "Automated batch expiry FIFO alerts preventing dead inventory and retail profit loss."]
+  },
+  {
+    id: "gst-billing-software-pune",
+    slug: "gst-billing-software-pune",
+    permalink: "./gst-billing-software-pune.html",
+    title: "Custom GST Billing Software in Pune: Fast Barcode POS, E-Invoicing &amp; Tally Prime Sync (2026)",
+    shortDescription: "Custom GST billing software for small businesses, manufacturers, and traders in Pune. Automated e-Invoicing, e-Way bill generation, thermal receipt printing, and seamless two-way Tally sync.",
+    category: "Billing & Accounting",
+    readTime: "10 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/gst_billing_software_pune.jpg",
+    imageAlt: "Custom GST Billing Software in Pune: Fast Barcode POS, E-Invoicing &amp; Tally Prime Sync (2026)",
+    imageCaption: "Custom GST Billing Software in Pune: Fast Barcode POS, E-Invoicing &amp; Tally Prime Sync (2026) by Swarajya Infotech Pune.",
+    tags: ["gst billing software pune", "custom billing software for small business pune", "e-invoicing software pune", "e-way bill billing software pune", "tally integration billing software pune", "retail billing software maharashtra"],
+    quickAnswer: "Swarajya Infotech delivers custom GST billing software engineered specifically for traders, wholesalers, and manufacturers in Pune and Maharashtra. With instant Government e-Invoice portal integration, automated e-Way bill generation, multi-rate tax computation (CGST, SGST, IGST), and real-time Tally Prime synchronization, we eliminate tax penalties and manual data entry.",
+    keyTakeaways: ["One-click Government e-Invoicing generating valid IRN and B2B signed QR codes instantly.", "Automated GST e-Way bills generated directly upon dispatch invoice creation.", "Two-way Tally Prime and Tally ERP 9 synchronization via XML / ODBC bridges.", "100% perpetual software ownership with zero monthly user subscriptions."]
+  },
+  {
+    id: "custom-crm-software-development-pune",
+    slug: "custom-crm-software-development-pune",
+    permalink: "./custom-crm-software-development-pune.html",
+    title: "Custom CRM Software Development in Pune: Lead Pipeline, WhatsApp API &amp; Field Sales (2026)",
+    shortDescription: "Build custom CRM software in Pune without per-user monthly SaaS fees. Multi-channel lead capture (IndiaMART, Facebook, Website), official WhatsApp Business API routing, field sales GPS tracking, and quote generators.",
+    category: "Sales & CRM",
+    readTime: "12 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/custom_crm_software_development_pune.jpg",
+    imageAlt: "Custom CRM Software Development in Pune: Lead Pipeline, WhatsApp API &amp; Field Sales (2026)",
+    imageCaption: "Custom CRM Software Development in Pune: Lead Pipeline, WhatsApp API &amp; Field Sales (2026) by Swarajya Infotech Pune.",
+    tags: ["custom crm software development pune", "b2b crm software pune", "lead management crm pune", "whatsapp crm integration pune", "field sales tracking software pune", "best crm company in pune"],
+    quickAnswer: "Swarajya Infotech develops custom B2B CRM software for engineering manufacturers, real estate developers, and service enterprises in Pune. We unify leads from IndiaMART, website forms, and WhatsApp, automate sales executive follow-ups, track field team GPS check-ins, and generate instant PDF quotes with zero recurring per-user SaaS license fees.",
+    keyTakeaways: ["Centralized multi-channel lead ingestion from IndiaMART, TradeIndia, Meta Ads, and web portals.", "Official WhatsApp Business API integration sending automated brochures and quotation follow-ups.", "Field executive mobile app with geotagged client visit check-ins and meeting notes.", "100% full source code ownership saving growing teams \u20b92,00,000+ annually in SaaS subscriptions."]
+  },
+  {
+    id: "custom-lms-software-development-pune",
+    slug: "custom-lms-software-development-pune",
+    permalink: "./custom-lms-software-development-pune.html",
+    title: "Custom LMS Software Development in Pune: Enterprise Training, Course Portals &amp; Online Exams (2026)",
+    shortDescription: "Custom Learning Management System (LMS) software in Pune. SCORM-compliant employee onboarding, coaching class video streaming portals, automated quiz engines, and digital certificate generators.",
+    category: "EdTech & Learning",
+    readTime: "11 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/custom_lms_software_development_pune.jpg",
+    imageAlt: "Custom LMS Software Development in Pune: Enterprise Training, Course Portals &amp; Online Exams (2026)",
+    imageCaption: "Custom LMS Software Development in Pune: Enterprise Training, Course Portals &amp; Online Exams (2026) by Swarajya Infotech Pune.",
+    tags: ["custom lms software development pune", "learning management system pune", "online course portal developer pune", "corporate training lms software pune", "coaching class mobile app pune", "scorm compliant lms india"],
+    quickAnswer: "Swarajya Infotech engineers bespoke Learning Management Systems (LMS) for educational academies, competitive exam coaching institutes, and corporate enterprises in Pune. Featuring anti-piracy encrypted video streaming, dynamic student watermarking, timed mock examination engines, and automated completion certificates with 100% source code ownership.",
+    keyTakeaways: ["Encrypted HLS video streaming with dynamic student watermarking preventing course piracy.", "Advanced online examination engine supporting negative marking, question shuffling, and timers.", "SCORM and xAPI compliance for corporate training and employee SOP onboarding.", "Integrated payment gateways (UPI, Credit Cards) with automated invoice generation."]
+  },
+  {
+    id: "seo-services-company-pune",
+    slug: "seo-services-company-pune",
+    permalink: "./seo-services-company-pune.html",
+    title: "Enterprise SEO Company in Pune: Technical SEO, AEO &amp; Local Search Growth Guide (2026)",
+    shortDescription: "Looking for the best enterprise SEO company in Pune? Swarajya Infotech delivers engineering-led SEO: sub-second Core Web Vitals, Answer Engine Optimization (AEO/GEO), Google AI Overviews ranking, and high-intent local Pune B2B leads.",
+    category: "SEO & Growth",
+    readTime: "12 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/seo_services_company_pune.jpg",
+    imageAlt: "Enterprise SEO Company in Pune: Technical SEO, AEO &amp; Local Search Growth Guide (2026)",
+    imageCaption: "Enterprise SEO Company in Pune: Technical SEO, AEO &amp; Local Search Growth Guide (2026) by Swarajya Infotech Pune.",
+    tags: ["seo company in pune", "enterprise seo services pune", "technical seo pune", "local seo agency pune", "answer engine optimization pune", "google ai overviews seo", "best b2b seo company pune"],
+    quickAnswer: "Swarajya Infotech is an engineering-first enterprise SEO company in Pune. Moving beyond generic meta tags, we architect sub-second Core Web Vitals performance, structured Schema.org knowledge graphs, Answer Engine Optimization (AEO) for Google AI Overviews and ChatGPT search, and high-converting local B2B keyword dominance across Pune and global markets.",
+    keyTakeaways: ["Technical Core Web Vitals optimization achieving LCP < 1.2s and 95+ Google PageSpeed scores.", "Answer Engine Optimization (AEO) designed to capture citations in Google AI Overviews.", "Comprehensive Schema.org semantic graphs connecting organizations, authors, and services.", "High-intent commercial B2B keyword dominance delivering qualified sales leads, not vanity traffic."]
+  },
+  {
+    id: "digital-marketing-services-pune",
+    slug: "digital-marketing-services-pune",
+    permalink: "./digital-marketing-services-pune.html",
+    title: "B2B Digital Marketing &amp; Lead Generation Services in Pune (2026): Performance Engineering Guide",
+    shortDescription: "Data-driven B2B digital marketing services in Pune. High-ROI Google Search Ads, LinkedIn account-based marketing (ABM), Meta lead funnels, and landing page conversion rate optimization for manufacturers and tech firms.",
+    category: "Marketing & Ads",
+    readTime: "11 min read",
+    datePublished: "2026-11-10",
+    dateModified: "2026-11-10",
+    displayDate: "November 10, 2026",
+    updatedDate: "November 10, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, direct industrial hardware communication, and ERP automation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/digital_marketing_services_pune.jpg",
+    imageAlt: "B2B Digital Marketing &amp; Lead Generation Services in Pune (2026): Performance Engineering Guide",
+    imageCaption: "B2B Digital Marketing &amp; Lead Generation Services in Pune (2026): Performance Engineering Guide by Swarajya Infotech Pune.",
+    tags: ["digital marketing services pune", "b2b digital marketing agency pune", "lead generation company pune", "google ads agency pune", "performance marketing pune", "b2b social media marketing pune"],
+    quickAnswer: "Swarajya Infotech delivers performance-driven B2B digital marketing and lead generation services in Pune. Specializing in high-intent Google Search Ads, LinkedIn account-based marketing (ABM) for industrial manufacturers, landing page conversion engineering, and full-funnel CRM attribution that turns advertising spend into measurable commercial revenue.",
+    keyTakeaways: ["Laser-targeted Google Search Ads bidding exclusively on high-intent commercial buyers.", "LinkedIn Account-Based Marketing (ABM) targeting plant heads, CTOs, and procurement directors.", "High-converting landing pages engineered with sub-second load times and friction-free forms.", "Closed-loop CRM tracking connecting every ad rupee directly to closed sales contracts."]
+  },
+  {
     id: "custom-label-printing-software",
     slug: "custom-label-printing-software",
     permalink: "./custom-label-printing-software.html",
