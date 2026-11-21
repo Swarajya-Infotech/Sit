@@ -50,8 +50,6 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/animations.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
 
   <!-- Article Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -868,27 +866,8 @@
   <!-- Scripts -->
   <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
   <script defer src="./assets/js/aos.js"></script>
-  <script defer src="./assets/js/vendor.js"></script>
   <script defer src="./assets/js/main.js"></script>
   <script defer src="./assets/js/custom.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const headings = document.querySelectorAll('.article-content h2, .article-content h3');
-      const tocList = document.querySelector('#tocList');
-      if (tocList && headings.length > 0) {
-        headings.forEach((heading, idx) => {
-          if (!heading.id) heading.id = 'heading-' + idx;
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.href = '#' + heading.id;
-          a.textContent = heading.textContent;
-          a.className = 'text-decoration-none ' + (heading.tagName === 'H3' ? 'ms-3 text-muted fs-8' : 'text-white fs-7');
-          li.appendChild(a);
-          tocList.appendChild(li);
-        });
-      }
-    });
-  </script>
 
 </body>
 </html>

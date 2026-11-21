@@ -1,23 +1,32 @@
 /**
- * SITNAM IT SOLUTIONS - Main Layout & Component Handler
+ * Swarajya Infotech - Unified Layout, Components & Vendor Handler
+ * High-performance UI interactions, clean navigation, auto-TOC, and vendor initialization.
  */
 
 (function() {
   "use strict";
 
-  // Sticky Header Effect
+  // 1. Clean Canonical URL handling (strip /index.html)
+  if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
+    window.history.replaceState(null, '', '/' + window.location.search + window.location.hash);
+  }
+
+  // 2. Sticky Header Effect & Back to Top Toggle
   const header = document.querySelector('.header-swarajya');
+  const backToTop = document.querySelector('#backToTop');
+
   function handleScroll() {
-    if (!header) return;
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    const scrollY = window.scrollY || window.pageYOffset;
+    if (header) {
+      if (scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
 
-    const backToTop = document.querySelector('#backToTop');
     if (backToTop) {
-      if (window.scrollY > 300) {
+      if (scrollY > 300) {
         backToTop.style.display = 'flex';
       } else {
         backToTop.style.display = 'none';
@@ -28,10 +37,9 @@
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('load', handleScroll, { passive: true });
 
-  // Back to Top Trigger
-  const backToTopBtn = document.querySelector('#backToTop');
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', (e) => {
+  // 3. Back to Top Smooth Scroll
+  if (backToTop) {
+    backToTop.addEventListener('click', (e) => {
       e.preventDefault();
       window.scrollTo({
         top: 0,
@@ -40,8 +48,49 @@
     });
   }
 
-  // Initialize Swiper for Testimonials & Client Logos
-  window.addEventListener('load', () => {
+  // 4. Automated Table of Contents (TOC) Generator for Technical Guides
+  document.addEventListener('DOMContentLoaded', () => {
+    const tocList = document.querySelector('#tocList');
+    if (tocList) {
+      const headings = document.querySelectorAll('.article-content h2, .article-content h3');
+      if (headings.length > 0) {
+        tocList.innerHTML = '';
+        headings.forEach((heading, idx) => {
+          if (!heading.id) {
+            heading.id = 'heading-' + idx;
+          }
+          const li = document.createElement('li');
+          li.className = heading.tagName.toLowerCase() === 'h3' ? 'ms-3 fs-8 my-1' : 'fs-7 my-1 fw-semibold';
+          const a = document.createElement('a');
+          a.href = '#' + heading.id;
+          a.className = 'text-decoration-none text-light-secondary hover-cyan';
+          a.textContent = heading.textContent.replace(/^#+\s*/, '').trim();
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+      }
+    }
+
+    // 5. Vendor Initializations (Single Centralized Execution)
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    }
+
+    if (typeof PureCounter !== 'undefined') {
+      new PureCounter();
+    }
+
+    if (typeof GLightbox !== 'undefined') {
+      GLightbox({
+        selector: '.glightbox'
+      });
+    }
+
     if (typeof Swiper !== 'undefined' && document.querySelector('.testimonial-swiper')) {
       new Swiper('.testimonial-swiper', {
         speed: 600,
@@ -64,7 +113,6 @@
       });
     }
 
-    // Isotope Filter Initialization
     if (typeof Isotope !== 'undefined' && document.querySelector('.portfolio-container')) {
       const portfolioContainer = document.querySelector('.portfolio-container');
       const iso = new Isotope(portfolioContainer, {
@@ -79,8 +127,7 @@
           if (activeEl) {
             activeEl.classList.remove('filter-active', 'active');
           }
-          this.classList.add('active'); // Keep .active for bootstrap styling
-          this.classList.add('filter-active'); // Keep .filter-active for legacy CSS compatibility
+          this.classList.add('active');
           const filterValue = this.getAttribute('data-filter');
           iso.arrange({ filter: filterValue });
         });
@@ -88,8 +135,7 @@
     }
   });
 
-
-  // Custom Cursor Animation (High Performance Hardware Accelerated)
+  // 6. Custom Interactive Cursor Animation (Hardware Accelerated)
   if (window.matchMedia("(pointer: fine)").matches) {
     const cursorDot = document.createElement('div');
     cursorDot.classList.add('cursor-dot');
@@ -132,7 +178,6 @@
       }
     }
 
-    // Delegated Hover detection to eliminate hundreds of listeners and MutationObserver thrashing
     document.addEventListener('mouseover', (e) => {
       const interactive = e.target.closest('a, button, .glass-card, input, select, textarea, .nav-link-swarajya');
       if (interactive) {
@@ -152,4 +197,3 @@
     }, { passive: true });
   }
 })();
-

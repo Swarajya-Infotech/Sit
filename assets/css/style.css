@@ -1262,3 +1262,136 @@ body.light-mode .in-article-cta {
 }
 
 
+
+
+/* =========================================================
+ * Swarajya Infotech - Unified Keyframe Animations & Utilities
+ * ========================================================= */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.25), 0 0 50px rgba(6, 182, 212, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.45), 0 0 75px rgba(99, 102, 241, 0.35);
+  }
+}
+
+@keyframes floatElement {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+@keyframes blinkCaret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--secondary, #06b6d4); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animated-bg-mesh {
+  background: linear-gradient(-45deg, #0f172a, #1e1b4b, #0f2b48, #041d38);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+[data-theme="light"] .animated-bg-mesh,
+body.light-mode .animated-bg-mesh {
+  background: linear-gradient(-45deg, #f8fafc, #eff6ff, #f0fdf4, #e0f2fe);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.floating-anim {
+  animation: floatElement 6s ease-in-out infinite;
+}
+
+.glow-effect {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.typed-cursor {
+  font-weight: 300;
+  color: var(--secondary, #06b6d4);
+  animation: blinkCaret 0.8s infinite;
+}
+
+/* =========================================================
+ * Swarajya Infotech - Unified Responsive Breakpoints
+ * Mobile (<576px), Tablet (768-1024px), Large Desktop (>1200px)
+ * ========================================================= */
+@media (max-width: 1199.98px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 80px 0 60px;
+    text-align: center;
+  }
+  
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .stat-box {
+    margin-bottom: 20px;
+  }
+
+  .nav-link-swarajya {
+    padding: 10px 16px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
+  .btn-swarajya-primary,
+  .btn-swarajya-outline {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .floating-controls {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
