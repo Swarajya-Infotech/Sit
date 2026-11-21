@@ -5,9 +5,9 @@
 
 const SWARAJYA_BLOG_POSTS = [
   {
-    id: "legacy-software-modernization-pune-guide",
-    slug: "legacy-software-modernization-pune-guide",
-    permalink: "./legacy-software-modernization-pune-guide.html",
+    id: "legacy-software-modernization-guide",
+    slug: "legacy-software-modernization-guide",
+    permalink: "./legacy-software-modernization-guide.html",
     title: "Legacy Software Modernization & Custom Re-Engineering Guide (2026): Upgrade Old Software to Modern Web & Cloud",
     shortDescription: "Complete 2026 engineering guide to legacy software modernization in Pune & India. Learn how to upgrade outdated FoxPro, VB6, MS Access, and monolithic desktop ERPs to modern cloud web applications with zero data loss and 100% source code ownership.",
     category: "Software Modernization",
@@ -34,7 +34,7 @@ const SWARAJYA_BLOG_POSTS = [
       role: "COO & CMO",
       avatar: "./assets/img/team/shubham.png"
     },
-    featuredImage: "./assets/img/blog/legacy_software_modernization_pune_guide.jpg",
+    featuredImage: "./assets/img/blog/legacy_software_modernization_guide.jpg",
     imageAlt: "Legacy Software Modernization & Custom Re-Engineering Guide (2026): Upgrade Old Software to Modern Web & Cloud",
     imageCaption: "Architectural blueprint for modernizing legacy desktop software to cloud web applications, microservices, and mobile apps with 100% source code ownership.",
     tags: [
