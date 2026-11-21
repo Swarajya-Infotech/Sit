@@ -5,6 +5,104 @@
 
 const SWARAJYA_BLOG_POSTS = [
   {
+    id: "dpdp-act-2023-compliance-guide-india",
+    slug: "dpdp-act-2023-compliance-guide-india",
+    permalink: "./dpdp-act-2023-compliance-guide-india.html",
+    title: "DPDP Act India Compliance Guide (2026): Rules, Consent Managers & Business Software Checklist",
+    shortDescription: "Complete DPDP Act 2023 compliance guide for Indian software, mobile apps, and enterprises. Understand MeitY's November 2026 Consent Manager portal launch, May 2027 enforcement deadline, ₹250 Cr penalties, and technical architecture for data principals and consent logs.",
+    category: "Compliance & Security",
+    readTime: "13 min read",
+    datePublished: "2026-11-21",
+    dateModified: "2026-11-21",
+    displayDate: "November 21, 2026",
+    updatedDate: "November 21, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, data sovereign architecture, and enterprise software security.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/dpdp_act_india_compliance_guide.jpg",
+    imageAlt: "DPDP Act 2023 India Compliance Guide: Consent Architecture, Audit Logging & Penalty Framework",
+    imageCaption: "Technical DPDP Act 2023 compliance architecture: MeitY Consent Manager API integration, immutable audit logging, and data fiduciary safeguards.",
+    tags: [
+      "DPDP Act 2023",
+      "Data Protection India",
+      "Consent Manager API",
+      "DPBI Compliance",
+      "MeitY Consent Portal",
+      "Data Fiduciary Architecture"
+    ],
+    quickAnswer: "The Digital Personal Data Protection (DPDP) Act 2023 mandates that Indian businesses and software developers obtain verifiable, unbundled consent before processing personal data. With MeitY's launch of the official Consent Manager Registration Portal (dpbi.gov.in) on November 13, 2026, and full enforcement starting May 2027, companies face penalties up to ₹250 crore for non-compliance. Technical compliance requires granular consent management, right-to-erasure workflows, data localization, and cryptographic audit logs.",
+    keyTakeaways: [
+      "MeitY launched the official Consent Manager Registration Portal (dpbi.gov.in) on Nov 13, 2026.",
+      "Phase 3 full enforcement deadline is May 2027 with penalties up to ₹250 crore per breach.",
+      "Software systems must decouple service delivery from optional consent tracking.",
+      "Swarajya Infotech designs sovereign, DPDP-compliant web architectures with immutable audit logging."
+    ]
+  },
+  {
+    id: "google-core-update-november-2026-guide",
+    slug: "google-core-update-november-2026-guide",
+    permalink: "./google-core-update-november-2026-guide.html",
+    title: "Google November 2026 Core Update: Ranking Volatility, AI Overviews & Recovery Guide",
+    shortDescription: "Google rolled out its global November 2026 Core Update on November 10, 2026. Discover key algorithmic shifts, Information Gain scoring, AI Overviews restructuring, unhelpful AI content suppression, and our technical recovery roadmap.",
+    category: "Search Engine Intelligence",
+    readTime: "12 min read",
+    datePublished: "2026-11-21",
+    dateModified: "2026-11-21",
+    displayDate: "November 21, 2026",
+    updatedDate: "November 21, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, Answer Engine Optimization (AEO/GEO), and core web vitals optimization.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/google_core_update_november_2026.jpg",
+    imageAlt: "Google November 2026 Core Update Analysis: AI Overviews, Information Gain, and Search Ranking Volatility",
+    imageCaption: "Navigating Google's November 2026 Core Update: prioritising original first-party data, sub-second Core Web Vitals, and Answer Engine Optimisation (AEO/GEO).",
+    tags: [
+      "Google Core Update Nov 2026",
+      "SEO Update 2026",
+      "Information Gain SEO",
+      "AI Overviews Citation",
+      "AEO Strategy",
+      "Google Search Volatility"
+    ],
+    quickAnswer: "Google's November 2026 Core Update rolled out globally starting November 10, 2026, marking Google's third and most decisive core algorithm update of the year. The update aggressively demotes repetitive, derivative AI-generated content lacking original first-party findings while rewarding pages with high Information Gain, verified human authorship (E-E-A-T), and sub-second Core Web Vitals. To recover or thrive, publishers must enrich articles with unique primary data, optimize for Answer Engine citations, and eliminate bloated Javascript.",
+    keyTakeaways: [
+      "Rolled out globally on November 10, 2026 across all search languages and regions.",
+      "Rewards high Information Gain and demotes synthetic AI summaries lacking original reporting.",
+      "Restructures Google AI Overviews to prioritize domain-level technical authority and structured data.",
+      "Sub-second LCP and INP < 200ms remain non-negotiable ranking and indexing prerequisites."
+    ]
+  },
+  {
     id: "rfid-solution-provider-pune",
     slug: "rfid-solution-provider-pune",
     permalink: "./rfid-solution-provider-pune.html",
