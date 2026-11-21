@@ -5,6 +5,55 @@
 
 const SWARAJYA_BLOG_POSTS = [
   {
+    id: "legacy-software-modernization-pune-guide",
+    slug: "legacy-software-modernization-pune-guide",
+    permalink: "./legacy-software-modernization-pune-guide.html",
+    title: "Legacy Software Modernization & Custom Re-Engineering Guide (2026): Upgrade Old Software to Modern Web & Cloud",
+    shortDescription: "Complete 2026 engineering guide to legacy software modernization in Pune & India. Learn how to upgrade outdated FoxPro, VB6, MS Access, and monolithic desktop ERPs to modern cloud web applications with zero data loss and 100% source code ownership.",
+    category: "Software Modernization",
+    readTime: "13 min read",
+    datePublished: "2026-11-21",
+    dateModified: "2026-11-21",
+    displayDate: "November 21, 2026",
+    updatedDate: "November 21, 2026",
+    author: {
+      name: "Prasad Nimbalkar",
+      role: "Lead Software Engineer",
+      company: "Swarajya Infotech",
+      avatar: "./assets/img/team/prasad_nimbalkar.jpg",
+      profileUrl: "./author-prasad-nimbalkar.html",
+      bio: "Prasad Nimbalkar is a Lead Software Engineer and Technical Author at Swarajya Infotech in Pune, Maharashtra. Specializing in high-performance web engineering, legacy database re-engineering, and enterprise software modernizations.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/prasadnimbalkar-net?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        instagram: "https://www.instagram.com/prasad.nimbalkar_?vrfl=MXJlNzdwbDQ3cDRuNg==",
+        whatsapp: "https://wa.me/919404190417"
+      }
+    },
+    reviewer: {
+      name: "Shubham Walekar",
+      role: "COO & CMO",
+      avatar: "./assets/img/team/shubham.png"
+    },
+    featuredImage: "./assets/img/blog/legacy_software_modernization_pune_guide.jpg",
+    imageAlt: "Legacy Software Modernization & Custom Re-Engineering Guide (2026): Upgrade Old Software to Modern Web & Cloud",
+    imageCaption: "Architectural blueprint for modernizing legacy desktop software to cloud web applications, microservices, and mobile apps with 100% source code ownership.",
+    tags: [
+      "legacy software modernization pune",
+      "upgrade old software to web application",
+      "custom software re-engineering india",
+      "foxpro vb6 migration to web cloud",
+      "modernize old erp software",
+      "custom software development company pune"
+    ],
+    quickAnswer: "Legacy software modernization is the process of re-engineering outdated desktop computer programs (Visual Basic 6, FoxPro, MS Access, Delphi, or monolithic ASP.NET) into cloud-native web applications and mobile dashboards. By using Martin Fowler's Strangler Fig Pattern, enterprises migrate module-by-module with zero business downtime, extract historical data into modern PostgreSQL databases without data loss, and retain 100% source code ownership without recurring per-user SaaS license fees.",
+    keyTakeaways: [
+      "Retain unique manufacturing BOM formulas, pricing tiers, and custom workflow logic without forced SaaS compromises.",
+      "Zero data loss guaranteed via automated ETL pipelines extracting legacy DBF/MDB files into PostgreSQL.",
+      "Strangler Fig pattern ensures dispatches, billing, and accounting operations run continuously during migration.",
+      "Swarajya Infotech delivers 100% source code ownership with zero recurring per-user monthly subscription fees."
+    ]
+  },
+  {
     id: "dpdp-act-2023-compliance-guide-india",
     slug: "dpdp-act-2023-compliance-guide-india",
     permalink: "./dpdp-act-2023-compliance-guide-india.html",
